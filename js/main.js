@@ -1,13 +1,24 @@
+
 /*=== GLOBAL VARIABLES ===*/
 const countriesWrapper = document.querySelector ('.countries-wrapper');
 const subtitle = document.querySelector ('.subtitle');
 const searchInput = document.querySelector ('#search-input');
+const buttons = document.querySelector ('.buttons');
+
+buttons.addEventListener ('click', e => {
+  console.log (e.target.className);
+  alert (e.target.className);
+});
 
 /*=== Filter function === */
 const filterCountries = (arr, search) => {
   const filteredCountries = arr.filter (country => {
     let {name, capital, languages} = country;
-    return name.toLowerCase ().includes (search);
+    let isName = name.toLowerCase ().includes (search);
+    let isCapital = capital.toLowerCase ().includes (search);
+    let isLanguages = languages.join ().toLowerCase ().includes (search);
+
+    return isName || isCapital || isLanguages;
   });
   let result = search == '' ? arr : filteredCountries;
   return result;
@@ -20,29 +31,26 @@ searchInput.addEventListener ('input', e => {
   showCountries (filterCountries (countries, searchTerm));
 });
 
+const createContent = content => {
+  const {name, capital, languages, population, flag} = content;
+  return `<div>
+  <img src="${flag}" />
+  <p>${name}</p>
+  <p>${capital}</p>
+  <p>${languages.join (', ')}</p>
+  <p>${population.toLocaleString ()}</p>
+</div>`;
+};
+
 subtitle.textContent = `Currently, we have ${countries.length} countries`;
+
 const showCountries = arr => {
+  let contents = '';
   countriesWrapper.innerHTML = '';
   arr.forEach ((country, i) => {
-    const {name, capital, population, flag, languages, currency} = country;
-    const countryDiv = document.createElement ('div');
-    let namePara = document.createElement ('p');
-    let capitalPara = document.createElement ('p');
-    let populationPara = document.createElement ('p');
-    let flagImage = document.createElement ('img');
-    let languagesPara = document.createElement ('p');
-    namePara.textContent = name;
-    capitalPara.textContent = capital;
-    populationPara.textContent = population;
-    flagImage.src = flag;
-    languagesPara.textContent = languages;
-    countryDiv.appendChild (flagImage);
-    countryDiv.appendChild (namePara);
-    countryDiv.appendChild (capitalPara);
-    countryDiv.appendChild (populationPara);
-    countryDiv.appendChild (languagesPara);
-    countriesWrapper.appendChild (countryDiv);
+    contents += createContent (country);
   });
+  countriesWrapper.innerHTML = contents;
 };
 
 showCountries (filterCountries (countries, searchInput.value));
