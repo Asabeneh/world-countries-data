@@ -21,7 +21,7 @@ const populationIcon = document.querySelector('.population i')
 /* Create a single country UI*/
 const createCountryUI = ({ name, capital, languages, population, flag }) => {
   const formatedCapital =
-    capital.length > 0 ? `<span>Capital: </span>${capital}` : ''
+   capital && capital.length > 0 ? `<span>Capital: </span>${capital}` : ''
   const formatLanguage = languages.length > 1 ? `Languages` : `Language`
   return `<div class="country">
             <div class="country_flag">
@@ -42,7 +42,7 @@ const filterCountries = (arr, search) => {
   const filteredCountries = arr.filter(country => {
     const { name, capital, languages } = country
     const isName = name.toLowerCase().includes(searchTerm)
-    const isCapital = capital.toLowerCase().includes(searchTerm)
+    const isCapital = capital && capital.toLowerCase().includes(searchTerm)
     const isLanguages = languages
       .join()
       .toLowerCase()
@@ -277,3 +277,4 @@ graphButtons.addEventListener('click', e => {
   } else {
   }
 })
+

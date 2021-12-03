@@ -1,2013 +1,4222 @@
 const countries = [
   {
-    name: 'Afghanistan',
-    capital: 'Kabul',
-    languages: ['Pashto', 'Uzbek', 'Turkmen'],
-    population: 27657145,
-    flag: 'https://restcountries.eu/data/afg.svg',
-    currency: 'Afghan afghani',
+    name: "Afghanistan",
+    capital: "Kabul",
+    languages: [
+      "Pashto",
+      "Uzbek",
+      "Turkmen"
+    ],
+    population: 38928341,
+    flag: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+    currencies: [
+      {
+        code: "AFN",
+        name: "Afghan afghani",
+        symbol: "؋"
+      }
+    ]
   },
   {
-    name: 'Åland Islands',
-    capital: 'Mariehamn',
-    languages: ['Swedish'],
+    name: "Åland Islands",
+    capital: "Mariehamn",
+    languages: [
+      "Swedish"
+    ],
     population: 28875,
-    flag: 'https://restcountries.eu/data/ala.svg',
-    currency: 'Euro',
+    flag: "https://flagcdn.com/ax.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Albania',
-    capital: 'Tirana',
-    languages: ['Albanian'],
-    population: 2886026,
-    flag: 'https://restcountries.eu/data/alb.svg',
-    currency: 'Albanian lek',
+    name: "Albania",
+    capital: "Tirana",
+    languages: [
+      "Albanian"
+    ],
+    population: 2837743,
+    flag: "https://flagcdn.com/al.svg",
+    currencies: [
+      {
+        code: "ALL",
+        name: "Albanian lek",
+        symbol: "L"
+      }
+    ]
   },
   {
-    name: 'Algeria',
-    capital: 'Algiers',
-    languages: ['Arabic'],
-    population: 40400000,
-    flag: 'https://restcountries.eu/data/dza.svg',
-    currency: 'Algerian dinar',
+    name: "Algeria",
+    capital: "Algiers",
+    languages: [
+      "Arabic"
+    ],
+    population: 43851043,
+    flag: "https://flagcdn.com/dz.svg",
+    currencies: [
+      {
+        code: "DZD",
+        name: "Algerian dinar",
+        symbol: "د.ج"
+      }
+    ]
   },
   {
-    name: 'American Samoa',
-    capital: 'Pago Pago',
-    languages: ['English', 'Samoan'],
-    population: 57100,
-    flag: 'https://restcountries.eu/data/asm.svg',
-    currency: 'United State Dollar',
+    name: "American Samoa",
+    capital: "Pago Pago",
+    languages: [
+      "English",
+      "Samoan"
+    ],
+    population: 55197,
+    flag: "https://flagcdn.com/as.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States Dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Andorra',
-    capital: 'Andorra la Vella',
-    languages: ['Catalan'],
-    population: 78014,
-    flag: 'https://restcountries.eu/data/and.svg',
-    currency: 'Euro',
+    name: "Andorra",
+    capital: "Andorra la Vella",
+    languages: [
+      "Catalan"
+    ],
+    population: 77265,
+    flag: "https://flagcdn.com/ad.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Angola',
-    capital: 'Luanda',
-    languages: ['Portuguese'],
-    population: 25868000,
-    flag: 'https://restcountries.eu/data/ago.svg',
-    currency: 'Angolan kwanza',
+    name: "Angola",
+    capital: "Luanda",
+    languages: [
+      "Portuguese"
+    ],
+    population: 32866268,
+    flag: "https://flagcdn.com/ao.svg",
+    currencies: [
+      {
+        code: "AOA",
+        name: "Angolan kwanza",
+        symbol: "Kz"
+      }
+    ]
   },
   {
-    name: 'Anguilla',
-    capital: 'The Valley',
-    languages: ['English'],
+    name: "Anguilla",
+    capital: "The Valley",
+    languages: [
+      "English"
+    ],
     population: 13452,
-    flag: 'https://restcountries.eu/data/aia.svg',
-    currency: 'East Caribbean dollar',
+    flag: "https://flagcdn.com/ai.svg",
+    currencies: [
+      {
+        code: "XCD",
+        name: "East Caribbean dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Antarctica',
-    capital: '',
-    languages: ['English', 'Russian'],
+    name: "Antarctica",
+    languages: [
+      "English",
+      "Russian"
+    ],
     population: 1000,
-    flag: 'https://restcountries.eu/data/ata.svg',
-    currency: 'Australian dollar',
+    flag: "https://flagcdn.com/aq.svg"
   },
   {
-    name: 'Antigua and Barbuda',
+    name: "Antigua and Barbuda",
     capital: "Saint John's",
-    languages: ['English'],
-    population: 86295,
-    flag: 'https://restcountries.eu/data/atg.svg',
-    currency: 'East Caribbean dollar',
+    languages: [
+      "English"
+    ],
+    population: 97928,
+    flag: "https://flagcdn.com/ag.svg",
+    currencies: [
+      {
+        code: "XCD",
+        name: "East Caribbean dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Argentina',
-    capital: 'Buenos Aires',
-    languages: ['Spanish', 'Guaraní'],
-    population: 43590400,
-    flag: 'https://restcountries.eu/data/arg.svg',
-    currency: 'Argentine peso',
+    name: "Argentina",
+    capital: "Buenos Aires",
+    languages: [
+      "Spanish",
+      "Guaraní"
+    ],
+    population: 45376763,
+    flag: "https://flagcdn.com/ar.svg",
+    currencies: [
+      {
+        code: "ARS",
+        name: "Argentine peso",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Armenia',
-    capital: 'Yerevan',
-    languages: ['Armenian', 'Russian'],
-    population: 2994400,
-    flag: 'https://restcountries.eu/data/arm.svg',
-    currency: 'Armenian dram',
+    name: "Armenia",
+    capital: "Yerevan",
+    languages: [
+      "Armenian"
+    ],
+    population: 2963234,
+    flag: "https://flagcdn.com/am.svg",
+    currencies: [
+      {
+        code: "AMD",
+        name: "Armenian dram",
+        symbol: "֏"
+      }
+    ]
   },
   {
-    name: 'Aruba',
-    capital: 'Oranjestad',
-    languages: ['Dutch', '(Eastern) Punjabi'],
-    population: 107394,
-    flag: 'https://restcountries.eu/data/abw.svg',
-    currency: 'Aruban florin',
+    name: "Aruba",
+    capital: "Oranjestad",
+    languages: [
+      "Dutch",
+      "(Eastern) Punjabi"
+    ],
+    population: 106766,
+    flag: "https://flagcdn.com/aw.svg",
+    currencies: [
+      {
+        code: "AWG",
+        name: "Aruban florin",
+        symbol: "ƒ"
+      }
+    ]
   },
   {
-    name: 'Australia',
-    capital: 'Canberra',
-    languages: ['English'],
-    population: 24117360,
-    flag: 'https://restcountries.eu/data/aus.svg',
-    currency: 'Australian dollar',
+    name: "Australia",
+    capital: "Canberra",
+    languages: [
+      "English"
+    ],
+    population: 25687041,
+    flag: "https://flagcdn.com/au.svg",
+    currencies: [
+      {
+        code: "AUD",
+        name: "Australian dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Austria',
-    capital: 'Vienna',
-    languages: ['German'],
-    population: 8725931,
-    flag: 'https://restcountries.eu/data/aut.svg',
-    currency: 'Euro',
+    name: "Austria",
+    capital: "Vienna",
+    languages: [
+      "German"
+    ],
+    population: 8917205,
+    flag: "https://flagcdn.com/at.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Azerbaijan',
-    capital: 'Baku',
-    languages: ['Azerbaijani'],
-    population: 9730500,
-    flag: 'https://restcountries.eu/data/aze.svg',
-    currency: 'Azerbaijani manat',
+    name: "Azerbaijan",
+    capital: "Baku",
+    languages: [
+      "Azerbaijani"
+    ],
+    population: 10110116,
+    flag: "https://flagcdn.com/az.svg",
+    currencies: [
+      {
+        code: "AZN",
+        name: "Azerbaijani manat",
+        symbol: "₼"
+      }
+    ]
   },
   {
-    name: 'Bahamas',
-    capital: 'Nassau',
-    languages: ['English'],
-    population: 378040,
-    flag: 'https://restcountries.eu/data/bhs.svg',
-    currency: 'Bahamian dollar',
+    name: "Bahamas",
+    capital: "Nassau",
+    languages: [
+      "English"
+    ],
+    population: 393248,
+    flag: "https://flagcdn.com/bs.svg",
+    currencies: [
+      {
+        code: "BSD",
+        name: "Bahamian dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Bahrain',
-    capital: 'Manama',
-    languages: ['Arabic'],
-    population: 1404900,
-    flag: 'https://restcountries.eu/data/bhr.svg',
-    currency: 'Bahraini dinar',
+    name: "Bahrain",
+    capital: "Manama",
+    languages: [
+      "Arabic"
+    ],
+    population: 1701583,
+    flag: "https://flagcdn.com/bh.svg",
+    currencies: [
+      {
+        code: "BHD",
+        name: "Bahraini dinar",
+        symbol: ".د.ب"
+      }
+    ]
   },
   {
-    name: 'Bangladesh',
-    capital: 'Dhaka',
-    languages: ['Bengali'],
-    population: 161006790,
-    flag: 'https://restcountries.eu/data/bgd.svg',
-    currency: 'Bangladeshi taka',
+    name: "Bangladesh",
+    capital: "Dhaka",
+    languages: [
+      "Bengali"
+    ],
+    population: 164689383,
+    flag: "https://flagcdn.com/bd.svg",
+    currencies: [
+      {
+        code: "BDT",
+        name: "Bangladeshi taka",
+        symbol: "৳"
+      }
+    ]
   },
   {
-    name: 'Barbados',
-    capital: 'Bridgetown',
-    languages: ['English'],
-    population: 285000,
-    flag: 'https://restcountries.eu/data/brb.svg',
-    currency: 'Barbadian dollar',
+    name: "Barbados",
+    capital: "Bridgetown",
+    languages: [
+      "English"
+    ],
+    population: 287371,
+    flag: "https://flagcdn.com/bb.svg",
+    currencies: [
+      {
+        code: "BBD",
+        name: "Barbadian dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Belarus',
-    capital: 'Minsk',
-    languages: ['Belarusian', 'Russian'],
-    population: 9498700,
-    flag: 'https://restcountries.eu/data/blr.svg',
-    currency: 'New Belarusian ruble',
+    name: "Belarus",
+    capital: "Minsk",
+    languages: [
+      "Belarusian",
+      "Russian"
+    ],
+    population: 9398861,
+    flag: "https://flagcdn.com/by.svg",
+    currencies: [
+      {
+        code: "BYN",
+        name: "New Belarusian ruble",
+        symbol: "Br"
+      },
+      {
+        code: "BYR",
+        name: "Old Belarusian ruble",
+        symbol: "Br"
+      }
+    ]
   },
   {
-    name: 'Belgium',
-    capital: 'Brussels',
-    languages: ['Dutch', 'French', 'German'],
-    population: 11319511,
-    flag: 'https://restcountries.eu/data/bel.svg',
-    currency: 'Euro',
+    name: "Belgium",
+    capital: "Brussels",
+    languages: [
+      "Dutch",
+      "French",
+      "German"
+    ],
+    population: 11555997,
+    flag: "https://flagcdn.com/be.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Belize',
-    capital: 'Belmopan',
-    languages: ['English', 'Spanish'],
-    population: 370300,
-    flag: 'https://restcountries.eu/data/blz.svg',
-    currency: 'Belize dollar',
+    name: "Belize",
+    capital: "Belmopan",
+    languages: [
+      "English",
+      "Spanish"
+    ],
+    population: 397621,
+    flag: "https://flagcdn.com/bz.svg",
+    currencies: [
+      {
+        code: "BZD",
+        name: "Belize dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Benin',
-    capital: 'Porto-Novo',
-    languages: ['French'],
-    population: 10653654,
-    flag: 'https://restcountries.eu/data/ben.svg',
-    currency: 'West African CFA franc',
+    name: "Benin",
+    capital: "Porto-Novo",
+    languages: [
+      "French"
+    ],
+    population: 12123198,
+    flag: "https://flagcdn.com/bj.svg",
+    currencies: [
+      {
+        code: "XOF",
+        name: "West African CFA franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Bermuda',
-    capital: 'Hamilton',
-    languages: ['English'],
-    population: 61954,
-    flag: 'https://restcountries.eu/data/bmu.svg',
-    currency: 'Bermudian dollar',
+    name: "Bermuda",
+    capital: "Hamilton",
+    languages: [
+      "English"
+    ],
+    population: 63903,
+    flag: "https://flagcdn.com/bm.svg",
+    currencies: [
+      {
+        code: "BMD",
+        name: "Bermudian dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Bhutan',
-    capital: 'Thimphu',
-    languages: ['Dzongkha'],
-    population: 775620,
-    flag: 'https://restcountries.eu/data/btn.svg',
-    currency: 'Bhutanese ngultrum',
+    name: "Bhutan",
+    capital: "Thimphu",
+    languages: [
+      "Dzongkha"
+    ],
+    population: 771612,
+    flag: "https://flagcdn.com/bt.svg",
+    currencies: [
+      {
+        code: "BTN",
+        name: "Bhutanese ngultrum",
+        symbol: "Nu."
+      },
+      {
+        code: "INR",
+        name: "Indian rupee",
+        symbol: "₹"
+      }
+    ]
   },
   {
-    name: 'Bolivia (Plurinational State of)',
-    capital: 'Sucre',
-    languages: ['Spanish', 'Aymara', 'Quechua'],
-    population: 10985059,
-    flag: 'https://restcountries.eu/data/bol.svg',
-    currency: 'Bolivian boliviano',
+    name: "Bolivia (Plurinational State of)",
+    capital: "Sucre",
+    languages: [
+      "Spanish",
+      "Aymara",
+      "Quechua"
+    ],
+    population: 11673029,
+    flag: "https://flagcdn.com/bo.svg",
+    currencies: [
+      {
+        code: "BOB",
+        name: "Bolivian boliviano",
+        symbol: "Bs."
+      }
+    ]
   },
   {
-    name: 'Bonaire, Sint Eustatius and Saba',
-    capital: 'Kralendijk',
-    languages: ['Dutch'],
+    name: "Bonaire, Sint Eustatius and Saba",
+    capital: "Kralendijk",
+    languages: [
+      "Dutch"
+    ],
     population: 17408,
-    flag: 'https://restcountries.eu/data/bes.svg',
-    currency: 'United States dollar',
+    flag: "https://flagcdn.com/bq.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Bosnia and Herzegovina',
-    capital: 'Sarajevo',
-    languages: ['Bosnian', 'Croatian', 'Serbian'],
-    population: 3531159,
-    flag: 'https://restcountries.eu/data/bih.svg',
-    currency: 'Bosnia and Herzegovina convertible mark',
+    name: "Bosnia and Herzegovina",
+    capital: "Sarajevo",
+    languages: [
+      "Bosnian",
+      "Croatian",
+      "Serbian"
+    ],
+    population: 3280815,
+    flag: "https://flagcdn.com/ba.svg",
+    currencies: [
+      {
+        code: "BAM",
+        name: "Bosnia and Herzegovina convertible mark",
+        symbol: "KM"
+      }
+    ]
   },
   {
-    name: 'Botswana',
-    capital: 'Gaborone',
-    languages: ['English', 'Tswana'],
-    population: 2141206,
-    flag: 'https://restcountries.eu/data/bwa.svg',
-    currency: 'Botswana pula',
+    name: "Botswana",
+    capital: "Gaborone",
+    languages: [
+      "English",
+      "Tswana"
+    ],
+    population: 2351625,
+    flag: "https://flagcdn.com/bw.svg",
+    currencies: [
+      {
+        code: "BWP",
+        name: "Botswana pula",
+        symbol: "P"
+      }
+    ]
   },
   {
-    name: 'Bouvet Island',
-    capital: '',
-    languages: ['Norwegian', 'Norwegian Bokmål', 'Norwegian Nynorsk'],
+    name: "Bouvet Island",
+    languages: [
+      "Norwegian",
+      "Norwegian Bokmål",
+      "Norwegian Nynorsk"
+    ],
     population: 0,
-    flag: 'https://restcountries.eu/data/bvt.svg',
-    currency: 'Norwegian krone',
+    flag: "https://flagcdn.com/bv.svg",
+    currencies: [
+      {
+        code: "NOK",
+        name: "Norwegian krone",
+        symbol: "kr"
+      }
+    ]
   },
   {
-    name: 'Brazil',
-    capital: 'Brasília',
-    languages: ['Portuguese'],
-    population: 206135893,
-    flag: 'https://restcountries.eu/data/bra.svg',
-    currency: 'Brazilian real',
+    name: "Brazil",
+    capital: "Brasília",
+    languages: [
+      "Portuguese"
+    ],
+    population: 212559409,
+    flag: "https://flagcdn.com/br.svg",
+    currencies: [
+      {
+        code: "BRL",
+        name: "Brazilian real",
+        symbol: "R$"
+      }
+    ]
   },
   {
-    name: 'British Indian Ocean Territory',
-    capital: 'Diego Garcia',
-    languages: ['English'],
+    name: "British Indian Ocean Territory",
+    capital: "Diego Garcia",
+    languages: [
+      "English"
+    ],
     population: 3000,
-    flag: 'https://restcountries.eu/data/iot.svg',
-    currency: 'United States dollar',
+    flag: "https://flagcdn.com/io.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'United States Minor Outlying Islands',
-    capital: '',
-    languages: ['English'],
+    name: "United States Minor Outlying Islands",
+    languages: [
+      "English"
+    ],
     population: 300,
-    flag: 'https://restcountries.eu/data/umi.svg',
-    currency: 'United States Dollar',
+    flag: "https://flagcdn.com/um.svg",
+    currencies: [
+      {
+        code: "GBP",
+        name: "British pound",
+        symbol: "£"
+      }
+    ]
   },
   {
-    name: 'Virgin Islands (British)',
-    capital: 'Road Town',
-    languages: ['English'],
-    population: 28514,
-    flag: 'https://restcountries.eu/data/vgb.svg',
-    currency: '[D]',
+    name: "Virgin Islands (British)",
+    capital: "Road Town",
+    languages: [
+      "English"
+    ],
+    population: 30237,
+    flag: "https://flagcdn.com/vg.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Virgin Islands (U.S.)',
-    capital: 'Charlotte Amalie',
-    languages: ['English'],
-    population: 114743,
-    flag: 'https://restcountries.eu/data/vir.svg',
-    currency: 'United States dollar',
+    name: "Virgin Islands (U.S.)",
+    capital: "Charlotte Amalie",
+    languages: [
+      "English"
+    ],
+    population: 106290,
+    flag: "https://flagcdn.com/vi.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Brunei Darussalam',
-    capital: 'Bandar Seri Begawan',
-    languages: ['Malay'],
-    population: 411900,
-    flag: 'https://restcountries.eu/data/brn.svg',
-    currency: 'Brunei dollar',
+    name: "Brunei Darussalam",
+    capital: "Bandar Seri Begawan",
+    languages: [
+      "Malay"
+    ],
+    population: 437483,
+    flag: "https://flagcdn.com/bn.svg",
+    currencies: [
+      {
+        code: "BND",
+        name: "Brunei dollar",
+        symbol: "$"
+      },
+      {
+        code: "SGD",
+        name: "Singapore dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Bulgaria',
-    capital: 'Sofia',
-    languages: ['Bulgarian'],
-    population: 7153784,
-    flag: 'https://restcountries.eu/data/bgr.svg',
-    currency: 'Bulgarian lev',
+    name: "Bulgaria",
+    capital: "Sofia",
+    languages: [
+      "Bulgarian"
+    ],
+    population: 6927288,
+    flag: "https://flagcdn.com/bg.svg",
+    currencies: [
+      {
+        code: "BGN",
+        name: "Bulgarian lev",
+        symbol: "лв"
+      }
+    ]
   },
   {
-    name: 'Burkina Faso',
-    capital: 'Ouagadougou',
-    languages: ['French', 'Fula'],
-    population: 19034397,
-    flag: 'https://restcountries.eu/data/bfa.svg',
-    currency: 'West African CFA franc',
+    name: "Burkina Faso",
+    capital: "Ouagadougou",
+    languages: [
+      "French",
+      "Fula"
+    ],
+    population: 20903278,
+    flag: "https://flagcdn.com/bf.svg",
+    currencies: [
+      {
+        code: "XOF",
+        name: "West African CFA franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Burundi',
-    capital: 'Bujumbura',
-    languages: ['French', 'Kirundi'],
-    population: 10114505,
-    flag: 'https://restcountries.eu/data/bdi.svg',
-    currency: 'Burundian franc',
+    name: "Burundi",
+    capital: "Gitega",
+    languages: [
+      "French",
+      "Kirundi"
+    ],
+    population: 11890781,
+    flag: "https://flagcdn.com/bi.svg",
+    currencies: [
+      {
+        code: "BIF",
+        name: "Burundian franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Cambodia',
-    capital: 'Phnom Penh',
-    languages: ['Khmer'],
-    population: 15626444,
-    flag: 'https://restcountries.eu/data/khm.svg',
-    currency: 'Cambodian riel',
+    name: "Cambodia",
+    capital: "Phnom Penh",
+    languages: [
+      "Khmer"
+    ],
+    population: 16718971,
+    flag: "https://flagcdn.com/kh.svg",
+    currencies: [
+      {
+        code: "KHR",
+        name: "Cambodian riel",
+        symbol: "៛"
+      },
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Cameroon',
-    capital: 'Yaoundé',
-    languages: ['English', 'French'],
-    population: 22709892,
-    flag: 'https://restcountries.eu/data/cmr.svg',
-    currency: 'Central African CFA franc',
+    name: "Cameroon",
+    capital: "Yaoundé",
+    languages: [
+      "English",
+      "French"
+    ],
+    population: 26545864,
+    flag: "https://flagcdn.com/cm.svg",
+    currencies: [
+      {
+        code: "XAF",
+        name: "Central African CFA franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Canada',
-    capital: 'Ottawa',
-    languages: ['English', 'French'],
-    population: 36155487,
-    flag: 'https://restcountries.eu/data/can.svg',
-    currency: 'Canadian dollar',
+    name: "Canada",
+    capital: "Ottawa",
+    languages: [
+      "English",
+      "French"
+    ],
+    population: 38005238,
+    flag: "https://flagcdn.com/ca.svg",
+    currencies: [
+      {
+        code: "CAD",
+        name: "Canadian dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Cabo Verde',
-    capital: 'Praia',
-    languages: ['Portuguese'],
-    population: 531239,
-    flag: 'https://restcountries.eu/data/cpv.svg',
-    currency: 'Cape Verdean escudo',
+    name: "Cabo Verde",
+    capital: "Praia",
+    languages: [
+      "Portuguese"
+    ],
+    population: 555988,
+    flag: "https://flagcdn.com/cv.svg",
+    currencies: [
+      {
+        code: "CVE",
+        name: "Cape Verdean escudo",
+        symbol: "Esc"
+      }
+    ]
   },
   {
-    name: 'Cayman Islands',
-    capital: 'George Town',
-    languages: ['English'],
-    population: 58238,
-    flag: 'https://restcountries.eu/data/cym.svg',
-    currency: 'Cayman Islands dollar',
+    name: "Cayman Islands",
+    capital: "George Town",
+    languages: [
+      "English"
+    ],
+    population: 65720,
+    flag: "https://flagcdn.com/ky.svg",
+    currencies: [
+      {
+        code: "KYD",
+        name: "Cayman Islands dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Central African Republic',
-    capital: 'Bangui',
-    languages: ['French', 'Sango'],
-    population: 4998000,
-    flag: 'https://restcountries.eu/data/caf.svg',
-    currency: 'Central African CFA franc',
+    name: "Central African Republic",
+    capital: "Bangui",
+    languages: [
+      "French",
+      "Sango"
+    ],
+    population: 4829764,
+    flag: "https://flagcdn.com/cf.svg",
+    currencies: [
+      {
+        code: "XAF",
+        name: "Central African CFA franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Chad',
+    name: "Chad",
     capital: "N'Djamena",
-    languages: ['French', 'Arabic'],
-    population: 14497000,
-    flag: 'https://restcountries.eu/data/tcd.svg',
-    currency: 'Central African CFA franc',
+    languages: [
+      "French",
+      "Arabic"
+    ],
+    population: 16425859,
+    flag: "https://flagcdn.com/td.svg",
+    currencies: [
+      {
+        code: "XAF",
+        name: "Central African CFA franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Chile',
-    capital: 'Santiago',
-    languages: ['Spanish'],
-    population: 18191900,
-    flag: 'https://restcountries.eu/data/chl.svg',
-    currency: 'Chilean peso',
+    name: "Chile",
+    capital: "Santiago",
+    languages: [
+      "Spanish"
+    ],
+    population: 19116209,
+    flag: "https://flagcdn.com/cl.svg",
+    currencies: [
+      {
+        code: "CLP",
+        name: "Chilean peso",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'China',
-    capital: 'Beijing',
-    languages: ['Chinese'],
-    population: 1377422166,
-    flag: 'https://restcountries.eu/data/chn.svg',
-    currency: 'Chinese yuan',
+    name: "China",
+    capital: "Beijing",
+    languages: [
+      "Chinese"
+    ],
+    population: 1402112000,
+    flag: "https://flagcdn.com/cn.svg",
+    currencies: [
+      {
+        code: "CNY",
+        name: "Chinese yuan",
+        symbol: "¥"
+      }
+    ]
   },
   {
-    name: 'Christmas Island',
-    capital: 'Flying Fish Cove',
-    languages: ['English'],
+    name: "Christmas Island",
+    capital: "Flying Fish Cove",
+    languages: [
+      "English"
+    ],
     population: 2072,
-    flag: 'https://restcountries.eu/data/cxr.svg',
-    currency: 'Australian dollar',
+    flag: "https://flagcdn.com/cx.svg",
+    currencies: [
+      {
+        code: "AUD",
+        name: "Australian dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Cocos (Keeling) Islands',
-    capital: 'West Island',
-    languages: ['English'],
+    name: "Cocos (Keeling) Islands",
+    capital: "West Island",
+    languages: [
+      "English"
+    ],
     population: 550,
-    flag: 'https://restcountries.eu/data/cck.svg',
-    currency: 'Australian dollar',
+    flag: "https://flagcdn.com/cc.svg",
+    currencies: [
+      {
+        code: "AUD",
+        name: "Australian dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Colombia',
-    capital: 'Bogotá',
-    languages: ['Spanish'],
-    population: 48759958,
-    flag: 'https://restcountries.eu/data/col.svg',
-    currency: 'Colombian peso',
+    name: "Colombia",
+    capital: "Bogotá",
+    languages: [
+      "Spanish"
+    ],
+    population: 50882884,
+    flag: "https://flagcdn.com/co.svg",
+    currencies: [
+      {
+        code: "COP",
+        name: "Colombian peso",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Comoros',
-    capital: 'Moroni',
-    languages: ['Arabic', 'French'],
-    population: 806153,
-    flag: 'https://restcountries.eu/data/com.svg',
-    currency: 'Comorian franc',
+    name: "Comoros",
+    capital: "Moroni",
+    languages: [
+      "Arabic",
+      "French"
+    ],
+    population: 869595,
+    flag: "https://flagcdn.com/km.svg",
+    currencies: [
+      {
+        code: "KMF",
+        name: "Comorian franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Congo',
-    capital: 'Brazzaville',
-    languages: ['French', 'Lingala'],
-    population: 4741000,
-    flag: 'https://restcountries.eu/data/cog.svg',
-    currency: 'Central African CFA franc',
+    name: "Congo",
+    capital: "Brazzaville",
+    languages: [
+      "French",
+      "Lingala"
+    ],
+    population: 5518092,
+    flag: "https://flagcdn.com/cg.svg",
+    currencies: [
+      {
+        code: "XAF",
+        name: "Central African CFA franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Congo (Democratic Republic of the)',
-    capital: 'Kinshasa',
-    languages: ['French', 'Lingala', 'Kongo', 'Swahili', 'Luba-Katanga'],
-    population: 85026000,
-    flag: 'https://restcountries.eu/data/cod.svg',
-    currency: 'Congolese franc',
+    name: "Congo (Democratic Republic of the)",
+    capital: "Kinshasa",
+    languages: [
+      "French",
+      "Lingala",
+      "Kongo",
+      "Swahili",
+      "Luba-Katanga"
+    ],
+    population: 89561404,
+    flag: "https://flagcdn.com/cd.svg",
+    currencies: [
+      {
+        code: "CDF",
+        name: "Congolese franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Cook Islands',
-    capital: 'Avarua',
-    languages: ['English'],
+    name: "Cook Islands",
+    capital: "Avarua",
+    languages: [
+      "English",
+      "Cook Islands Māori"
+    ],
     population: 18100,
-    flag: 'https://restcountries.eu/data/cok.svg',
-    currency: 'New Zealand dollar',
+    flag: "https://flagcdn.com/ck.svg",
+    currencies: [
+      {
+        code: "NZD",
+        name: "New Zealand dollar",
+        symbol: "$"
+      },
+      {
+        code: "CKD",
+        name: "Cook Islands dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Costa Rica',
-    capital: 'San José',
-    languages: ['Spanish'],
-    population: 4890379,
-    flag: 'https://restcountries.eu/data/cri.svg',
-    currency: 'Costa Rican colón',
+    name: "Costa Rica",
+    capital: "San José",
+    languages: [
+      "Spanish"
+    ],
+    population: 5094114,
+    flag: "https://flagcdn.com/cr.svg",
+    currencies: [
+      {
+        code: "CRC",
+        name: "Costa Rican colón",
+        symbol: "₡"
+      }
+    ]
   },
   {
-    name: 'Croatia',
-    capital: 'Zagreb',
-    languages: ['Croatian'],
-    population: 4190669,
-    flag: 'https://restcountries.eu/data/hrv.svg',
-    currency: 'Croatian kuna',
+    name: "Croatia",
+    capital: "Zagreb",
+    languages: [
+      "Croatian"
+    ],
+    population: 4047200,
+    flag: "https://flagcdn.com/hr.svg",
+    currencies: [
+      {
+        code: "HRK",
+        name: "Croatian kuna",
+        symbol: "kn"
+      }
+    ]
   },
   {
-    name: 'Cuba',
-    capital: 'Havana',
-    languages: ['Spanish'],
-    population: 11239004,
-    flag: 'https://restcountries.eu/data/cub.svg',
-    currency: 'Cuban convertible peso',
+    name: "Cuba",
+    capital: "Havana",
+    languages: [
+      "Spanish"
+    ],
+    population: 11326616,
+    flag: "https://flagcdn.com/cu.svg",
+    currencies: [
+      {
+        code: "CUC",
+        name: "Cuban convertible peso",
+        symbol: "$"
+      },
+      {
+        code: "CUP",
+        name: "Cuban peso",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Curaçao',
-    capital: 'Willemstad',
-    languages: ['Dutch', '(Eastern) Punjabi', 'English'],
-    population: 154843,
-    flag: 'https://restcountries.eu/data/cuw.svg',
-    currency: 'Netherlands Antillean guilder',
+    name: "Curaçao",
+    capital: "Willemstad",
+    languages: [
+      "Dutch",
+      "(Eastern) Punjabi",
+      "English"
+    ],
+    population: 155014,
+    flag: "https://flagcdn.com/cw.svg",
+    currencies: [
+      {
+        code: "ANG",
+        name: "Netherlands Antillean guilder",
+        symbol: "ƒ"
+      }
+    ]
   },
   {
-    name: 'Cyprus',
-    capital: 'Nicosia',
-    languages: ['Greek (modern)', 'Turkish', 'Armenian'],
-    population: 847000,
-    flag: 'https://restcountries.eu/data/cyp.svg',
-    currency: 'Euro',
+    name: "Cyprus",
+    capital: "Nicosia",
+    languages: [
+      "Greek (modern)",
+      "Turkish",
+      "Armenian"
+    ],
+    population: 1207361,
+    flag: "https://flagcdn.com/cy.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Czech Republic',
-    capital: 'Prague',
-    languages: ['Czech', 'Slovak'],
-    population: 10558524,
-    flag: 'https://restcountries.eu/data/cze.svg',
-    currency: 'Czech koruna',
+    name: "Czech Republic",
+    capital: "Prague",
+    languages: [
+      "Czech",
+      "Slovak"
+    ],
+    population: 10698896,
+    flag: "https://flagcdn.com/cz.svg",
+    currencies: [
+      {
+        code: "CZK",
+        name: "Czech koruna",
+        symbol: "Kč"
+      }
+    ]
   },
   {
-    name: 'Denmark',
-    capital: 'Copenhagen',
-    languages: ['Danish'],
-    population: 5717014,
-    flag: 'https://restcountries.eu/data/dnk.svg',
-    currency: 'Danish krone',
+    name: "Denmark",
+    capital: "Copenhagen",
+    languages: [
+      "Danish"
+    ],
+    population: 5831404,
+    flag: "https://flagcdn.com/dk.svg",
+    currencies: [
+      {
+        code: "DKK",
+        name: "Danish krone",
+        symbol: "kr"
+      }
+    ]
   },
   {
-    name: 'Djibouti',
-    capital: 'Djibouti',
-    languages: ['French', 'Arabic'],
-    population: 900000,
-    flag: 'https://restcountries.eu/data/dji.svg',
-    currency: 'Djiboutian franc',
+    name: "Djibouti",
+    capital: "Djibouti",
+    languages: [
+      "French",
+      "Arabic"
+    ],
+    population: 988002,
+    flag: "https://flagcdn.com/dj.svg",
+    currencies: [
+      {
+        code: "DJF",
+        name: "Djiboutian franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Dominica',
-    capital: 'Roseau',
-    languages: ['English'],
-    population: 71293,
-    flag: 'https://restcountries.eu/data/dma.svg',
-    currency: 'East Caribbean dollar',
+    name: "Dominica",
+    capital: "Roseau",
+    languages: [
+      "English"
+    ],
+    population: 71991,
+    flag: "https://flagcdn.com/dm.svg",
+    currencies: [
+      {
+        code: "XCD",
+        name: "East Caribbean dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Dominican Republic',
-    capital: 'Santo Domingo',
-    languages: ['Spanish'],
-    population: 10075045,
-    flag: 'https://restcountries.eu/data/dom.svg',
-    currency: 'Dominican peso',
+    name: "Dominican Republic",
+    capital: "Santo Domingo",
+    languages: [
+      "Spanish"
+    ],
+    population: 10847904,
+    flag: "https://flagcdn.com/do.svg",
+    currencies: [
+      {
+        code: "DOP",
+        name: "Dominican peso",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Ecuador',
-    capital: 'Quito',
-    languages: ['Spanish'],
-    population: 16545799,
-    flag: 'https://restcountries.eu/data/ecu.svg',
-    currency: 'United States dollar',
+    name: "Ecuador",
+    capital: "Quito",
+    languages: [
+      "Spanish"
+    ],
+    population: 17643060,
+    flag: "https://flagcdn.com/ec.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Egypt',
-    capital: 'Cairo',
-    languages: ['Arabic'],
-    population: 91290000,
-    flag: 'https://restcountries.eu/data/egy.svg',
-    currency: 'Egyptian pound',
+    name: "Egypt",
+    capital: "Cairo",
+    languages: [
+      "Arabic"
+    ],
+    population: 102334403,
+    flag: "https://flagcdn.com/eg.svg",
+    currencies: [
+      {
+        code: "EGP",
+        name: "Egyptian pound",
+        symbol: "£"
+      }
+    ]
   },
   {
-    name: 'El Salvador',
-    capital: 'San Salvador',
-    languages: ['Spanish'],
-    population: 6520675,
-    flag: 'https://restcountries.eu/data/slv.svg',
-    currency: 'United States dollar',
+    name: "El Salvador",
+    capital: "San Salvador",
+    languages: [
+      "Spanish"
+    ],
+    population: 6486201,
+    flag: "https://flagcdn.com/sv.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Equatorial Guinea',
-    capital: 'Malabo',
-    languages: ['Spanish', 'French'],
-    population: 1222442,
-    flag: 'https://restcountries.eu/data/gnq.svg',
-    currency: 'Central African CFA franc',
+    name: "Equatorial Guinea",
+    capital: "Malabo",
+    languages: [
+      "Spanish",
+      "French",
+      "Portuguese",
+      "Fang"
+    ],
+    population: 1402985,
+    flag: "https://flagcdn.com/gq.svg",
+    currencies: [
+      {
+        code: "XAF",
+        name: "Central African CFA franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Eritrea',
-    capital: 'Asmara',
-    languages: ['Tigrinya', 'Arabic', 'English'],
+    name: "Eritrea",
+    capital: "Asmara",
+    languages: [
+      "Tigrinya",
+      "Arabic",
+      "English",
+      "Tigre",
+      "Kunama",
+      "Saho",
+      "Bilen",
+      "Nara",
+      "Afar"
+    ],
     population: 5352000,
-    flag: 'https://restcountries.eu/data/eri.svg',
-    currency: 'Eritrean nakfa',
+    flag: "https://flagcdn.com/er.svg",
+    currencies: [
+      {
+        code: "ERN",
+        name: "Eritrean nakfa",
+        symbol: "Nfk"
+      }
+    ]
   },
   {
-    name: 'Estonia',
-    capital: 'Tallinn',
-    languages: ['Estonian'],
-    population: 1315944,
-    flag: 'https://restcountries.eu/data/est.svg',
-    currency: 'Euro',
+    name: "Estonia",
+    capital: "Tallinn",
+    languages: [
+      "Estonian"
+    ],
+    population: 1331057,
+    flag: "https://flagcdn.com/ee.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Ethiopia',
-    capital: 'Addis Ababa',
-    languages: ['Amharic'],
-    population: 92206005,
-    flag: 'https://restcountries.eu/data/eth.svg',
-    currency: 'Ethiopian birr',
+    name: "Ethiopia",
+    capital: "Addis Ababa",
+    languages: [
+      "Amharic"
+    ],
+    population: 114963583,
+    flag: "https://flagcdn.com/et.svg",
+    currencies: [
+      {
+        code: "ETB",
+        name: "Ethiopian birr",
+        symbol: "Br"
+      }
+    ]
   },
   {
-    name: 'Falkland Islands (Malvinas)',
-    capital: 'Stanley',
-    languages: ['English'],
+    name: "Falkland Islands (Malvinas)",
+    capital: "Stanley",
+    languages: [
+      "English"
+    ],
     population: 2563,
-    flag: 'https://restcountries.eu/data/flk.svg',
-    currency: 'Falkland Islands pound',
+    flag: "https://flagcdn.com/fk.svg",
+    currencies: [
+      {
+        code: "FKP",
+        name: "Falkland Islands pound",
+        symbol: "£"
+      }
+    ]
   },
   {
-    name: 'Faroe Islands',
-    capital: 'Tórshavn',
-    languages: ['Faroese'],
-    population: 49376,
-    flag: 'https://restcountries.eu/data/fro.svg',
-    currency: 'Danish krone',
+    name: "Faroe Islands",
+    capital: "Tórshavn",
+    languages: [
+      "Faroese"
+    ],
+    population: 48865,
+    flag: "https://flagcdn.com/fo.svg",
+    currencies: [
+      {
+        code: "DKK",
+        name: "Danish krone",
+        symbol: "kr"
+      },
+      {
+        code: "FOK",
+        name: "Faroese króna",
+        symbol: "kr"
+      }
+    ]
   },
   {
-    name: 'Fiji',
-    capital: 'Suva',
-    languages: ['English', 'Fijian', 'Hindi', 'Urdu'],
-    population: 867000,
-    flag: 'https://restcountries.eu/data/fji.svg',
-    currency: 'Fijian dollar',
+    name: "Fiji",
+    capital: "Suva",
+    languages: [
+      "English",
+      "Fijian",
+      "Fiji Hindi",
+      "Rotuman"
+    ],
+    population: 896444,
+    flag: "https://flagcdn.com/fj.svg",
+    currencies: [
+      {
+        code: "FJD",
+        name: "Fijian dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Finland',
-    capital: 'Helsinki',
-    languages: ['Finnish', 'Swedish'],
-    population: 5491817,
-    flag: 'https://restcountries.eu/data/fin.svg',
-    currency: 'Euro',
+    name: "Finland",
+    capital: "Helsinki",
+    languages: [
+      "Finnish",
+      "Swedish"
+    ],
+    population: 5530719,
+    flag: "https://flagcdn.com/fi.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'France',
-    capital: 'Paris',
-    languages: ['French'],
-    population: 66710000,
-    flag: 'https://restcountries.eu/data/fra.svg',
-    currency: 'Euro',
+    name: "France",
+    capital: "Paris",
+    languages: [
+      "French"
+    ],
+    population: 67391582,
+    flag: "https://flagcdn.com/fr.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'French Guiana',
-    capital: 'Cayenne',
-    languages: ['French'],
+    name: "French Guiana",
+    capital: "Cayenne",
+    languages: [
+      "French"
+    ],
     population: 254541,
-    flag: 'https://restcountries.eu/data/guf.svg',
-    currency: 'Euro',
+    flag: "https://flagcdn.com/gf.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'French Polynesia',
-    capital: 'Papeetē',
-    languages: ['French'],
-    population: 271800,
-    flag: 'https://restcountries.eu/data/pyf.svg',
-    currency: 'CFP franc',
+    name: "French Polynesia",
+    capital: "Papeetē",
+    languages: [
+      "French"
+    ],
+    population: 280904,
+    flag: "https://flagcdn.com/pf.svg",
+    currencies: [
+      {
+        code: "XPF",
+        name: "CFP franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'French Southern Territories',
-    capital: 'Port-aux-Français',
-    languages: ['French'],
+    name: "French Southern Territories",
+    capital: "Port-aux-Français",
+    languages: [
+      "French"
+    ],
     population: 140,
-    flag: 'https://restcountries.eu/data/atf.svg',
-    currency: 'Euro',
+    flag: "https://flagcdn.com/tf.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Gabon',
-    capital: 'Libreville',
-    languages: ['French'],
-    population: 1802278,
-    flag: 'https://restcountries.eu/data/gab.svg',
-    currency: 'Central African CFA franc',
+    name: "Gabon",
+    capital: "Libreville",
+    languages: [
+      "French"
+    ],
+    population: 2225728,
+    flag: "https://flagcdn.com/ga.svg",
+    currencies: [
+      {
+        code: "XAF",
+        name: "Central African CFA franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Gambia',
-    capital: 'Banjul',
-    languages: ['English'],
-    population: 1882450,
-    flag: 'https://restcountries.eu/data/gmb.svg',
-    currency: 'Gambian dalasi',
+    name: "Gambia",
+    capital: "Banjul",
+    languages: [
+      "English"
+    ],
+    population: 2416664,
+    flag: "https://flagcdn.com/gm.svg",
+    currencies: [
+      {
+        code: "GMD",
+        name: "Gambian dalasi",
+        symbol: "D"
+      }
+    ]
   },
   {
-    name: 'Georgia',
-    capital: 'Tbilisi',
-    languages: ['Georgian'],
-    population: 3720400,
-    flag: 'https://restcountries.eu/data/geo.svg',
-    currency: 'Georgian Lari',
+    name: "Georgia",
+    capital: "Tbilisi",
+    languages: [
+      "Georgian"
+    ],
+    population: 3714000,
+    flag: "https://flagcdn.com/ge.svg",
+    currencies: [
+      {
+        code: "GEL",
+        name: "Georgian Lari",
+        symbol: "ლ"
+      }
+    ]
   },
   {
-    name: 'Germany',
-    capital: 'Berlin',
-    languages: ['German'],
-    population: 81770900,
-    flag: 'https://restcountries.eu/data/deu.svg',
-    currency: 'Euro',
+    name: "Germany",
+    capital: "Berlin",
+    languages: [
+      "German"
+    ],
+    population: 83240525,
+    flag: "https://flagcdn.com/de.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Ghana',
-    capital: 'Accra',
-    languages: ['English'],
-    population: 27670174,
-    flag: 'https://restcountries.eu/data/gha.svg',
-    currency: 'Ghanaian cedi',
+    name: "Ghana",
+    capital: "Accra",
+    languages: [
+      "English"
+    ],
+    population: 31072945,
+    flag: "https://flagcdn.com/gh.svg",
+    currencies: [
+      {
+        code: "GHS",
+        name: "Ghanaian cedi",
+        symbol: "₵"
+      }
+    ]
   },
   {
-    name: 'Gibraltar',
-    capital: 'Gibraltar',
-    languages: ['English'],
-    population: 33140,
-    flag: 'https://restcountries.eu/data/gib.svg',
-    currency: 'Gibraltar pound',
+    name: "Gibraltar",
+    capital: "Gibraltar",
+    languages: [
+      "English"
+    ],
+    population: 33691,
+    flag: "https://flagcdn.com/gi.svg",
+    currencies: [
+      {
+        code: "GIP",
+        name: "Gibraltar pound",
+        symbol: "£"
+      }
+    ]
   },
   {
-    name: 'Greece',
-    capital: 'Athens',
-    languages: ['Greek (modern)'],
-    population: 10858018,
-    flag: 'https://restcountries.eu/data/grc.svg',
-    currency: 'Euro',
+    name: "Greece",
+    capital: "Athens",
+    languages: [
+      "Greek (modern)"
+    ],
+    population: 10715549,
+    flag: "https://flagcdn.com/gr.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Greenland',
-    capital: 'Nuuk',
-    languages: ['Kalaallisut'],
-    population: 55847,
-    flag: 'https://restcountries.eu/data/grl.svg',
-    currency: 'Danish krone',
+    name: "Greenland",
+    capital: "Nuuk",
+    languages: [
+      "Kalaallisut"
+    ],
+    population: 56367,
+    flag: "https://flagcdn.com/gl.svg",
+    currencies: [
+      {
+        code: "DKK",
+        name: "Danish krone",
+        symbol: "kr"
+      }
+    ]
   },
   {
-    name: 'Grenada',
+    name: "Grenada",
     capital: "St. George's",
-    languages: ['English'],
-    population: 103328,
-    flag: 'https://restcountries.eu/data/grd.svg',
-    currency: 'East Caribbean dollar',
+    languages: [
+      "English"
+    ],
+    population: 112519,
+    flag: "https://flagcdn.com/gd.svg",
+    currencies: [
+      {
+        code: "XCD",
+        name: "East Caribbean dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Guadeloupe',
-    capital: 'Basse-Terre',
-    languages: ['French'],
+    name: "Guadeloupe",
+    capital: "Basse-Terre",
+    languages: [
+      "French"
+    ],
     population: 400132,
-    flag: 'https://restcountries.eu/data/glp.svg',
-    currency: 'Euro',
+    flag: "https://flagcdn.com/gp.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Guam',
-    capital: 'Hagåtña',
-    languages: ['English', 'Chamorro', 'Spanish'],
-    population: 184200,
-    flag: 'https://restcountries.eu/data/gum.svg',
-    currency: 'United States dollar',
+    name: "Guam",
+    capital: "Hagåtña",
+    languages: [
+      "English",
+      "Chamorro",
+      "Spanish"
+    ],
+    population: 168783,
+    flag: "https://flagcdn.com/gu.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Guatemala',
-    capital: 'Guatemala City',
-    languages: ['Spanish'],
-    population: 16176133,
-    flag: 'https://restcountries.eu/data/gtm.svg',
-    currency: 'Guatemalan quetzal',
+    name: "Guatemala",
+    capital: "Guatemala City",
+    languages: [
+      "Spanish"
+    ],
+    population: 16858333,
+    flag: "https://flagcdn.com/gt.svg",
+    currencies: [
+      {
+        code: "GTQ",
+        name: "Guatemalan quetzal",
+        symbol: "Q"
+      }
+    ]
   },
   {
-    name: 'Guernsey',
-    capital: 'St. Peter Port',
-    languages: ['English', 'French'],
+    name: "Guernsey",
+    capital: "St. Peter Port",
+    languages: [
+      "English",
+      "French"
+    ],
     population: 62999,
-    flag: 'https://restcountries.eu/data/ggy.svg',
-    currency: 'British pound',
+    flag: "https://flagcdn.com/gg.svg",
+    currencies: [
+      {
+        code: "GBP",
+        name: "British pound",
+        symbol: "£"
+      },
+      {
+        code: "GGP",
+        name: "Guernsey pound",
+        symbol: "£"
+      }
+    ]
   },
   {
-    name: 'Guinea',
-    capital: 'Conakry',
-    languages: ['French', 'Fula'],
-    population: 12947000,
-    flag: 'https://restcountries.eu/data/gin.svg',
-    currency: 'Guinean franc',
+    name: "Guinea",
+    capital: "Conakry",
+    languages: [
+      "French",
+      "Fula"
+    ],
+    population: 13132792,
+    flag: "https://flagcdn.com/gn.svg",
+    currencies: [
+      {
+        code: "GNF",
+        name: "Guinean franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Guinea-Bissau',
-    capital: 'Bissau',
-    languages: ['Portuguese'],
-    population: 1547777,
-    flag: 'https://restcountries.eu/data/gnb.svg',
-    currency: 'West African CFA franc',
+    name: "Guinea-Bissau",
+    capital: "Bissau",
+    languages: [
+      "Portuguese"
+    ],
+    population: 1967998,
+    flag: "https://flagcdn.com/gw.svg",
+    currencies: [
+      {
+        code: "XOF",
+        name: "West African CFA franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Guyana',
-    capital: 'Georgetown',
-    languages: ['English'],
-    population: 746900,
-    flag: 'https://restcountries.eu/data/guy.svg',
-    currency: 'Guyanese dollar',
+    name: "Guyana",
+    capital: "Georgetown",
+    languages: [
+      "English"
+    ],
+    population: 786559,
+    flag: "https://flagcdn.com/gy.svg",
+    currencies: [
+      {
+        code: "GYD",
+        name: "Guyanese dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Haiti',
-    capital: 'Port-au-Prince',
-    languages: ['French', 'Haitian'],
-    population: 11078033,
-    flag: 'https://restcountries.eu/data/hti.svg',
-    currency: 'Haitian gourde',
+    name: "Haiti",
+    capital: "Port-au-Prince",
+    languages: [
+      "French",
+      "Haitian"
+    ],
+    population: 11402533,
+    flag: "https://flagcdn.com/ht.svg",
+    currencies: [
+      {
+        code: "HTG",
+        name: "Haitian gourde",
+        symbol: "G"
+      }
+    ]
   },
   {
-    name: 'Heard Island and McDonald Islands',
-    capital: '',
-    languages: ['English'],
+    name: "Heard Island and McDonald Islands",
+    languages: [
+      "English"
+    ],
     population: 0,
-    flag: 'https://restcountries.eu/data/hmd.svg',
-    currency: 'Australian dollar',
+    flag: "https://flagcdn.com/hm.svg",
+    currencies: [
+      {
+        code: "AUD",
+        name: "Australian dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Holy See',
-    capital: 'Rome',
-    languages: ['Latin', 'Italian', 'French', 'German'],
+    name: "Vatican City",
+    capital: "Vatican City",
+    languages: [
+      "Latin",
+      "Italian",
+      "French",
+      "German"
+    ],
     population: 451,
-    flag: 'https://restcountries.eu/data/vat.svg',
-    currency: 'Euro',
+    flag: "https://flagcdn.com/va.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Honduras',
-    capital: 'Tegucigalpa',
-    languages: ['Spanish'],
-    population: 8576532,
-    flag: 'https://restcountries.eu/data/hnd.svg',
-    currency: 'Honduran lempira',
+    name: "Honduras",
+    capital: "Tegucigalpa",
+    languages: [
+      "Spanish"
+    ],
+    population: 9904608,
+    flag: "https://flagcdn.com/hn.svg",
+    currencies: [
+      {
+        code: "HNL",
+        name: "Honduran lempira",
+        symbol: "L"
+      }
+    ]
   },
   {
-    name: 'Hong Kong',
-    capital: 'City of Victoria',
-    languages: ['English', 'Chinese'],
-    population: 7324300,
-    flag: 'https://restcountries.eu/data/hkg.svg',
-    currency: 'Hong Kong dollar',
+    name: "Hungary",
+    capital: "Budapest",
+    languages: [
+      "Hungarian"
+    ],
+    population: 9749763,
+    flag: "https://flagcdn.com/hu.svg",
+    currencies: [
+      {
+        code: "HUF",
+        name: "Hungarian forint",
+        symbol: "Ft"
+      }
+    ]
   },
   {
-    name: 'Hungary',
-    capital: 'Budapest',
-    languages: ['Hungarian'],
-    population: 9823000,
-    flag: 'https://restcountries.eu/data/hun.svg',
-    currency: 'Hungarian forint',
+    name: "Hong Kong",
+    capital: "City of Victoria",
+    languages: [
+      "English",
+      "Chinese"
+    ],
+    population: 7481800,
+    flag: "https://flagcdn.com/hk.svg",
+    currencies: [
+      {
+        code: "HKD",
+        name: "Hong Kong dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Iceland',
-    capital: 'Reykjavík',
-    languages: ['Icelandic'],
-    population: 334300,
-    flag: 'https://restcountries.eu/data/isl.svg',
-    currency: 'Icelandic króna',
+    name: "Iceland",
+    capital: "Reykjavík",
+    languages: [
+      "Icelandic"
+    ],
+    population: 366425,
+    flag: "https://flagcdn.com/is.svg",
+    currencies: [
+      {
+        code: "ISK",
+        name: "Icelandic króna",
+        symbol: "kr"
+      }
+    ]
   },
   {
-    name: 'India',
-    capital: 'New Delhi',
-    languages: ['Hindi', 'English'],
-    population: 1295210000,
-    flag: 'https://restcountries.eu/data/ind.svg',
-    currency: 'Indian rupee',
+    name: "India",
+    capital: "New Delhi",
+    languages: [
+      "Hindi",
+      "English"
+    ],
+    population: 1380004385,
+    flag: "https://flagcdn.com/in.svg",
+    currencies: [
+      {
+        code: "INR",
+        name: "Indian rupee",
+        symbol: "₹"
+      }
+    ]
   },
   {
-    name: 'Indonesia',
-    capital: 'Jakarta',
-    languages: ['Indonesian'],
-    population: 258705000,
-    flag: 'https://restcountries.eu/data/idn.svg',
-    currency: 'Indonesian rupiah',
+    name: "Indonesia",
+    capital: "Jakarta",
+    languages: [
+      "Indonesian"
+    ],
+    population: 273523621,
+    flag: "https://flagcdn.com/id.svg",
+    currencies: [
+      {
+        code: "IDR",
+        name: "Indonesian rupiah",
+        symbol: "Rp"
+      }
+    ]
   },
   {
-    name: "Côte d'Ivoire",
-    capital: 'Yamoussoukro',
-    languages: ['French'],
-    population: 22671331,
-    flag: 'https://restcountries.eu/data/civ.svg',
-    currency: 'West African CFA franc',
+    name: "Ivory Coast",
+    capital: "Yamoussoukro",
+    languages: [
+      "French"
+    ],
+    population: 26378275,
+    flag: "https://flagcdn.com/ci.svg",
+    currencies: [
+      {
+        code: "XOF",
+        name: "West African CFA franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Iran (Islamic Republic of)',
-    capital: 'Tehran',
-    languages: ['Persian (Farsi)'],
-    population: 79369900,
-    flag: 'https://restcountries.eu/data/irn.svg',
-    currency: 'Iranian rial',
+    name: "Iran (Islamic Republic of)",
+    capital: "Tehran",
+    languages: [
+      "Persian (Farsi)"
+    ],
+    population: 83992953,
+    flag: "https://flagcdn.com/ir.svg",
+    currencies: [
+      {
+        code: "IRR",
+        name: "Iranian rial",
+        symbol: "﷼"
+      }
+    ]
   },
   {
-    name: 'Iraq',
-    capital: 'Baghdad',
-    languages: ['Arabic', 'Kurdish'],
-    population: 37883543,
-    flag: 'https://restcountries.eu/data/irq.svg',
-    currency: 'Iraqi dinar',
+    name: "Iraq",
+    capital: "Baghdad",
+    languages: [
+      "Arabic",
+      "Kurdish"
+    ],
+    population: 40222503,
+    flag: "https://flagcdn.com/iq.svg",
+    currencies: [
+      {
+        code: "IQD",
+        name: "Iraqi dinar",
+        symbol: "ع.د"
+      }
+    ]
   },
   {
-    name: 'Ireland',
-    capital: 'Dublin',
-    languages: ['Irish', 'English'],
-    population: 6378000,
-    flag: 'https://restcountries.eu/data/irl.svg',
-    currency: 'Euro',
+    name: "Ireland",
+    capital: "Dublin",
+    languages: [
+      "Irish",
+      "English"
+    ],
+    population: 4994724,
+    flag: "https://flagcdn.com/ie.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Isle of Man',
-    capital: 'Douglas',
-    languages: ['English', 'Manx'],
-    population: 84497,
-    flag: 'https://restcountries.eu/data/imn.svg',
-    currency: 'British pound',
+    name: "Isle of Man",
+    capital: "Douglas",
+    languages: [
+      "English",
+      "Manx"
+    ],
+    population: 85032,
+    flag: "https://flagcdn.com/im.svg",
+    currencies: [
+      {
+        code: "GBP",
+        name: "British pound",
+        symbol: "£"
+      },
+      {
+        code: "IMP[G]",
+        name: "Manx pound",
+        symbol: "£"
+      }
+    ]
   },
   {
-    name: 'Israel',
-    capital: 'Jerusalem',
-    languages: ['Hebrew (modern)', 'Arabic'],
-    population: 8527400,
-    flag: 'https://restcountries.eu/data/isr.svg',
-    currency: 'Israeli new shekel',
+    name: "Israel",
+    capital: "Jerusalem",
+    languages: [
+      "Hebrew (modern)",
+      "Arabic"
+    ],
+    population: 9216900,
+    flag: "https://flagcdn.com/il.svg",
+    currencies: [
+      {
+        code: "ILS",
+        name: "Israeli new shekel",
+        symbol: "₪"
+      }
+    ]
   },
   {
-    name: 'Italy',
-    capital: 'Rome',
-    languages: ['Italian'],
-    population: 60665551,
-    flag: 'https://restcountries.eu/data/ita.svg',
-    currency: 'Euro',
+    name: "Italy",
+    capital: "Rome",
+    languages: [
+      "Italian"
+    ],
+    population: 59554023,
+    flag: "https://flagcdn.com/it.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Jamaica',
-    capital: 'Kingston',
-    languages: ['English'],
-    population: 2723246,
-    flag: 'https://restcountries.eu/data/jam.svg',
-    currency: 'Jamaican dollar',
+    name: "Jamaica",
+    capital: "Kingston",
+    languages: [
+      "English"
+    ],
+    population: 2961161,
+    flag: "https://flagcdn.com/jm.svg",
+    currencies: [
+      {
+        code: "JMD",
+        name: "Jamaican dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Japan',
-    capital: 'Tokyo',
-    languages: ['Japanese'],
-    population: 126960000,
-    flag: 'https://restcountries.eu/data/jpn.svg',
-    currency: 'Japanese yen',
+    name: "Japan",
+    capital: "Tokyo",
+    languages: [
+      "Japanese"
+    ],
+    population: 125836021,
+    flag: "https://flagcdn.com/jp.svg",
+    currencies: [
+      {
+        code: "JPY",
+        name: "Japanese yen",
+        symbol: "¥"
+      }
+    ]
   },
   {
-    name: 'Jersey',
-    capital: 'Saint Helier',
-    languages: ['English', 'French'],
+    name: "Jersey",
+    capital: "Saint Helier",
+    languages: [
+      "English",
+      "French"
+    ],
     population: 100800,
-    flag: 'https://restcountries.eu/data/jey.svg',
-    currency: 'British pound',
+    flag: "https://flagcdn.com/je.svg",
+    currencies: [
+      {
+        code: "GBP",
+        name: "British pound",
+        symbol: "£"
+      },
+      {
+        code: "JEP[G]",
+        name: "Jersey pound",
+        symbol: "£"
+      }
+    ]
   },
   {
-    name: 'Jordan',
-    capital: 'Amman',
-    languages: ['Arabic'],
-    population: 9531712,
-    flag: 'https://restcountries.eu/data/jor.svg',
-    currency: 'Jordanian dinar',
+    name: "Jordan",
+    capital: "Amman",
+    languages: [
+      "Arabic"
+    ],
+    population: 10203140,
+    flag: "https://flagcdn.com/jo.svg",
+    currencies: [
+      {
+        code: "JOD",
+        name: "Jordanian dinar",
+        symbol: "د.ا"
+      }
+    ]
   },
   {
-    name: 'Kazakhstan',
-    capital: 'Astana',
-    languages: ['Kazakh', 'Russian'],
-    population: 17753200,
-    flag: 'https://restcountries.eu/data/kaz.svg',
-    currency: 'Kazakhstani tenge',
+    name: "Kazakhstan",
+    capital: "Nur-Sultan",
+    languages: [
+      "Kazakh",
+      "Russian"
+    ],
+    population: 18754440,
+    flag: "https://flagcdn.com/kz.svg",
+    currencies: [
+      {
+        code: "KZT",
+        name: "Kazakhstani tenge",
+        symbol: "₸"
+      }
+    ]
   },
   {
-    name: 'Kenya',
-    capital: 'Nairobi',
-    languages: ['English', 'Swahili'],
-    population: 47251000,
-    flag: 'https://restcountries.eu/data/ken.svg',
-    currency: 'Kenyan shilling',
+    name: "Kenya",
+    capital: "Nairobi",
+    languages: [
+      "English",
+      "Swahili"
+    ],
+    population: 53771300,
+    flag: "https://flagcdn.com/ke.svg",
+    currencies: [
+      {
+        code: "KES",
+        name: "Kenyan shilling",
+        symbol: "Sh"
+      }
+    ]
   },
   {
-    name: 'Kiribati',
-    capital: 'South Tarawa',
-    languages: ['English'],
-    population: 113400,
-    flag: 'https://restcountries.eu/data/kir.svg',
-    currency: 'Australian dollar',
+    name: "Kiribati",
+    capital: "South Tarawa",
+    languages: [
+      "English"
+    ],
+    population: 119446,
+    flag: "https://flagcdn.com/ki.svg",
+    currencies: [
+      {
+        code: "AUD",
+        name: "Australian dollar",
+        symbol: "$"
+      },
+      {
+        code: "KID",
+        name: "Kiribati dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Kuwait',
-    capital: 'Kuwait City',
-    languages: ['Arabic'],
-    population: 4183658,
-    flag: 'https://restcountries.eu/data/kwt.svg',
-    currency: 'Kuwaiti dinar',
+    name: "Kuwait",
+    capital: "Kuwait City",
+    languages: [
+      "Arabic"
+    ],
+    population: 4270563,
+    flag: "https://flagcdn.com/kw.svg",
+    currencies: [
+      {
+        code: "KWD",
+        name: "Kuwaiti dinar",
+        symbol: "د.ك"
+      }
+    ]
   },
   {
-    name: 'Kyrgyzstan',
-    capital: 'Bishkek',
-    languages: ['Kyrgyz', 'Russian'],
-    population: 6047800,
-    flag: 'https://restcountries.eu/data/kgz.svg',
-    currency: 'Kyrgyzstani som',
+    name: "Kyrgyzstan",
+    capital: "Bishkek",
+    languages: [
+      "Kyrgyz",
+      "Russian"
+    ],
+    population: 6591600,
+    flag: "https://flagcdn.com/kg.svg",
+    currencies: [
+      {
+        code: "KGS",
+        name: "Kyrgyzstani som",
+        symbol: "с"
+      }
+    ]
   },
   {
     name: "Lao People's Democratic Republic",
-    capital: 'Vientiane',
-    languages: ['Lao'],
-    population: 6492400,
-    flag: 'https://restcountries.eu/data/lao.svg',
-    currency: 'Lao kip',
+    capital: "Vientiane",
+    languages: [
+      "Lao"
+    ],
+    population: 7275556,
+    flag: "https://flagcdn.com/la.svg",
+    currencies: [
+      {
+        code: "LAK",
+        name: "Lao kip",
+        symbol: "₭"
+      }
+    ]
   },
   {
-    name: 'Latvia',
-    capital: 'Riga',
-    languages: ['Latvian'],
-    population: 1961600,
-    flag: 'https://restcountries.eu/data/lva.svg',
-    currency: 'Euro',
+    name: "Latvia",
+    capital: "Riga",
+    languages: [
+      "Latvian"
+    ],
+    population: 1901548,
+    flag: "https://flagcdn.com/lv.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Lebanon',
-    capital: 'Beirut',
-    languages: ['Arabic', 'French'],
-    population: 5988000,
-    flag: 'https://restcountries.eu/data/lbn.svg',
-    currency: 'Lebanese pound',
+    name: "Lebanon",
+    capital: "Beirut",
+    languages: [
+      "Arabic",
+      "French"
+    ],
+    population: 6825442,
+    flag: "https://flagcdn.com/lb.svg",
+    currencies: [
+      {
+        code: "LBP",
+        name: "Lebanese pound",
+        symbol: "ل.ل"
+      }
+    ]
   },
   {
-    name: 'Lesotho',
-    capital: 'Maseru',
-    languages: ['English', 'Southern Sotho'],
-    population: 1894194,
-    flag: 'https://restcountries.eu/data/lso.svg',
-    currency: 'Lesotho loti',
+    name: "Lesotho",
+    capital: "Maseru",
+    languages: [
+      "English",
+      "Southern Sotho"
+    ],
+    population: 2142252,
+    flag: "https://flagcdn.com/ls.svg",
+    currencies: [
+      {
+        code: "LSL",
+        name: "Lesotho loti",
+        symbol: "L"
+      },
+      {
+        code: "ZAR",
+        name: "South African rand",
+        symbol: "R"
+      }
+    ]
   },
   {
-    name: 'Liberia',
-    capital: 'Monrovia',
-    languages: ['English'],
-    population: 4615000,
-    flag: 'https://restcountries.eu/data/lbr.svg',
-    currency: 'Liberian dollar',
+    name: "Liberia",
+    capital: "Monrovia",
+    languages: [
+      "English"
+    ],
+    population: 5057677,
+    flag: "https://flagcdn.com/lr.svg",
+    currencies: [
+      {
+        code: "LRD",
+        name: "Liberian dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Libya',
-    capital: 'Tripoli',
-    languages: ['Arabic'],
-    population: 6385000,
-    flag: 'https://restcountries.eu/data/lby.svg',
-    currency: 'Libyan dinar',
+    name: "Libya",
+    capital: "Tripoli",
+    languages: [
+      "Arabic"
+    ],
+    population: 6871287,
+    flag: "https://flagcdn.com/ly.svg",
+    currencies: [
+      {
+        code: "LYD",
+        name: "Libyan dinar",
+        symbol: "ل.د"
+      }
+    ]
   },
   {
-    name: 'Liechtenstein',
-    capital: 'Vaduz',
-    languages: ['German'],
-    population: 37623,
-    flag: 'https://restcountries.eu/data/lie.svg',
-    currency: 'Swiss franc',
+    name: "Liechtenstein",
+    capital: "Vaduz",
+    languages: [
+      "German"
+    ],
+    population: 38137,
+    flag: "https://flagcdn.com/li.svg",
+    currencies: [
+      {
+        code: "CHF",
+        name: "Swiss franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Lithuania',
-    capital: 'Vilnius',
-    languages: ['Lithuanian'],
-    population: 2872294,
-    flag: 'https://restcountries.eu/data/ltu.svg',
-    currency: 'Euro',
+    name: "Lithuania",
+    capital: "Vilnius",
+    languages: [
+      "Lithuanian"
+    ],
+    population: 2794700,
+    flag: "https://flagcdn.com/lt.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Luxembourg',
-    capital: 'Luxembourg',
-    languages: ['French', 'German', 'Luxembourgish'],
-    population: 576200,
-    flag: 'https://restcountries.eu/data/lux.svg',
-    currency: 'Euro',
+    name: "Luxembourg",
+    capital: "Luxembourg",
+    languages: [
+      "French",
+      "German",
+      "Luxembourgish"
+    ],
+    population: 632275,
+    flag: "https://flagcdn.com/lu.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Macao',
-    capital: '',
-    languages: ['Chinese', 'Portuguese'],
-    population: 649100,
-    flag: 'https://restcountries.eu/data/mac.svg',
-    currency: 'Macanese pataca',
+    name: "Macao",
+    languages: [
+      "Chinese",
+      "Portuguese"
+    ],
+    population: 649342,
+    flag: "https://flagcdn.com/mo.svg",
+    currencies: [
+      {
+        code: "MOP",
+        name: "Macanese pataca",
+        symbol: "P"
+      }
+    ]
   },
   {
-    name: 'Macedonia (the former Yugoslav Republic of)',
-    capital: 'Skopje',
-    languages: ['Macedonian'],
-    population: 2058539,
-    flag: 'https://restcountries.eu/data/mkd.svg',
-    currency: 'Macedonian denar',
+    name: "North Macedonia",
+    capital: "Skopje",
+    languages: [
+      "Macedonian"
+    ],
+    population: 2083380,
+    flag: "https://flagcdn.com/mk.svg",
+    currencies: [
+      {
+        code: "MKD",
+        name: "Macedonian denar",
+        symbol: "ден"
+      }
+    ]
   },
   {
-    name: 'Madagascar',
-    capital: 'Antananarivo',
-    languages: ['French', 'Malagasy'],
-    population: 22434363,
-    flag: 'https://restcountries.eu/data/mdg.svg',
-    currency: 'Malagasy ariary',
+    name: "Madagascar",
+    capital: "Antananarivo",
+    languages: [
+      "French",
+      "Malagasy"
+    ],
+    population: 27691019,
+    flag: "https://flagcdn.com/mg.svg",
+    currencies: [
+      {
+        code: "MGA",
+        name: "Malagasy ariary",
+        symbol: "Ar"
+      }
+    ]
   },
   {
-    name: 'Malawi',
-    capital: 'Lilongwe',
-    languages: ['English', 'Chichewa'],
-    population: 16832910,
-    flag: 'https://restcountries.eu/data/mwi.svg',
-    currency: 'Malawian kwacha',
+    name: "Malawi",
+    capital: "Lilongwe",
+    languages: [
+      "English",
+      "Chichewa"
+    ],
+    population: 19129955,
+    flag: "https://flagcdn.com/mw.svg",
+    currencies: [
+      {
+        code: "MWK",
+        name: "Malawian kwacha",
+        symbol: "MK"
+      }
+    ]
   },
   {
-    name: 'Malaysia',
-    capital: 'Kuala Lumpur',
-    languages: ['Malaysian'],
-    population: 31405416,
-    flag: 'https://restcountries.eu/data/mys.svg',
-    currency: 'Malaysian ringgit',
+    name: "Malaysia",
+    capital: "Kuala Lumpur",
+    languages: [
+      "Malaysian"
+    ],
+    population: 32365998,
+    flag: "https://flagcdn.com/my.svg",
+    currencies: [
+      {
+        code: "MYR",
+        name: "Malaysian ringgit",
+        symbol: "RM"
+      }
+    ]
   },
   {
-    name: 'Maldives',
-    capital: 'Malé',
-    languages: ['Divehi'],
-    population: 344023,
-    flag: 'https://restcountries.eu/data/mdv.svg',
-    currency: 'Maldivian rufiyaa',
+    name: "Maldives",
+    capital: "Malé",
+    languages: [
+      "Divehi"
+    ],
+    population: 540542,
+    flag: "https://flagcdn.com/mv.svg",
+    currencies: [
+      {
+        code: "MVR",
+        name: "Maldivian rufiyaa",
+        symbol: ".ރ"
+      }
+    ]
   },
   {
-    name: 'Mali',
-    capital: 'Bamako',
-    languages: ['French'],
-    population: 18135000,
-    flag: 'https://restcountries.eu/data/mli.svg',
-    currency: 'West African CFA franc',
+    name: "Mali",
+    capital: "Bamako",
+    languages: [
+      "French"
+    ],
+    population: 20250834,
+    flag: "https://flagcdn.com/ml.svg",
+    currencies: [
+      {
+        code: "XOF",
+        name: "West African CFA franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Malta',
-    capital: 'Valletta',
-    languages: ['Maltese', 'English'],
-    population: 425384,
-    flag: 'https://restcountries.eu/data/mlt.svg',
-    currency: 'Euro',
+    name: "Malta",
+    capital: "Valletta",
+    languages: [
+      "Maltese",
+      "English"
+    ],
+    population: 525285,
+    flag: "https://flagcdn.com/mt.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Marshall Islands',
-    capital: 'Majuro',
-    languages: ['English', 'Marshallese'],
-    population: 54880,
-    flag: 'https://restcountries.eu/data/mhl.svg',
-    currency: 'United States dollar',
+    name: "Marshall Islands",
+    capital: "Majuro",
+    languages: [
+      "English",
+      "Marshallese"
+    ],
+    population: 59194,
+    flag: "https://flagcdn.com/mh.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Martinique',
-    capital: 'Fort-de-France',
-    languages: ['French'],
+    name: "Martinique",
+    capital: "Fort-de-France",
+    languages: [
+      "French"
+    ],
     population: 378243,
-    flag: 'https://restcountries.eu/data/mtq.svg',
-    currency: 'Euro',
+    flag: "https://flagcdn.com/mq.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Mauritania',
-    capital: 'Nouakchott',
-    languages: ['Arabic'],
-    population: 3718678,
-    flag: 'https://restcountries.eu/data/mrt.svg',
-    currency: 'Mauritanian ouguiya',
+    name: "Mauritania",
+    capital: "Nouakchott",
+    languages: [
+      "Arabic"
+    ],
+    population: 4649660,
+    flag: "https://flagcdn.com/mr.svg",
+    currencies: [
+      {
+        code: "MRO",
+        name: "Mauritanian ouguiya",
+        symbol: "UM"
+      }
+    ]
   },
   {
-    name: 'Mauritius',
-    capital: 'Port Louis',
-    languages: ['English'],
-    population: 1262879,
-    flag: 'https://restcountries.eu/data/mus.svg',
-    currency: 'Mauritian rupee',
+    name: "Mauritius",
+    capital: "Port Louis",
+    languages: [
+      "English"
+    ],
+    population: 1265740,
+    flag: "https://flagcdn.com/mu.svg",
+    currencies: [
+      {
+        code: "MUR",
+        name: "Mauritian rupee",
+        symbol: "₨"
+      }
+    ]
   },
   {
-    name: 'Mayotte',
-    capital: 'Mamoudzou',
-    languages: ['French'],
+    name: "Mayotte",
+    capital: "Mamoudzou",
+    languages: [
+      "French"
+    ],
     population: 226915,
-    flag: 'https://restcountries.eu/data/myt.svg',
-    currency: 'Euro',
+    flag: "https://flagcdn.com/yt.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Mexico',
-    capital: 'Mexico City',
-    languages: ['Spanish'],
-    population: 122273473,
-    flag: 'https://restcountries.eu/data/mex.svg',
-    currency: 'Mexican peso',
+    name: "Mexico",
+    capital: "Mexico City",
+    languages: [
+      "Spanish"
+    ],
+    population: 128932753,
+    flag: "https://flagcdn.com/mx.svg",
+    currencies: [
+      {
+        code: "MXN",
+        name: "Mexican peso",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Micronesia (Federated States of)',
-    capital: 'Palikir',
-    languages: ['English'],
-    population: 102800,
-    flag: 'https://restcountries.eu/data/fsm.svg',
-    currency: '[D]',
+    name: "Micronesia (Federated States of)",
+    capital: "Palikir",
+    languages: [
+      "English"
+    ],
+    population: 115021,
+    flag: "https://flagcdn.com/fm.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Moldova (Republic of)',
-    capital: 'Chișinău',
-    languages: ['Romanian'],
-    population: 3553100,
-    flag: 'https://restcountries.eu/data/mda.svg',
-    currency: 'Moldovan leu',
+    name: "Moldova (Republic of)",
+    capital: "Chișinău",
+    languages: [
+      "Romanian"
+    ],
+    population: 2617820,
+    flag: "https://flagcdn.com/md.svg",
+    currencies: [
+      {
+        code: "MDL",
+        name: "Moldovan leu",
+        symbol: "L"
+      }
+    ]
   },
   {
-    name: 'Monaco',
-    capital: 'Monaco',
-    languages: ['French'],
-    population: 38400,
-    flag: 'https://restcountries.eu/data/mco.svg',
-    currency: 'Euro',
+    name: "Monaco",
+    capital: "Monaco",
+    languages: [
+      "French"
+    ],
+    population: 39244,
+    flag: "https://flagcdn.com/mc.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Mongolia',
-    capital: 'Ulan Bator',
-    languages: ['Mongolian'],
-    population: 3093100,
-    flag: 'https://restcountries.eu/data/mng.svg',
-    currency: 'Mongolian tögrög',
+    name: "Mongolia",
+    capital: "Ulan Bator",
+    languages: [
+      "Mongolian"
+    ],
+    population: 3278292,
+    flag: "https://flagcdn.com/mn.svg",
+    currencies: [
+      {
+        code: "MNT",
+        name: "Mongolian tögrög",
+        symbol: "₮"
+      }
+    ]
   },
   {
-    name: 'Montenegro',
-    capital: 'Podgorica',
-    languages: ['Serbian', 'Bosnian', 'Albanian', 'Croatian'],
-    population: 621810,
-    flag: 'https://restcountries.eu/data/mne.svg',
-    currency: 'Euro',
+    name: "Montenegro",
+    capital: "Podgorica",
+    languages: [
+      "Serbian",
+      "Bosnian",
+      "Albanian",
+      "Croatian"
+    ],
+    population: 621718,
+    flag: "https://flagcdn.com/me.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Montserrat',
-    capital: 'Plymouth',
-    languages: ['English'],
+    name: "Montserrat",
+    capital: "Plymouth",
+    languages: [
+      "English"
+    ],
     population: 4922,
-    flag: 'https://restcountries.eu/data/msr.svg',
-    currency: 'East Caribbean dollar',
+    flag: "https://flagcdn.com/ms.svg",
+    currencies: [
+      {
+        code: "XCD",
+        name: "East Caribbean dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Morocco',
-    capital: 'Rabat',
-    languages: ['Arabic'],
-    population: 33337529,
-    flag: 'https://restcountries.eu/data/mar.svg',
-    currency: 'Moroccan dirham',
+    name: "Morocco",
+    capital: "Rabat",
+    languages: [
+      "Arabic"
+    ],
+    population: 36910558,
+    flag: "https://flagcdn.com/ma.svg",
+    currencies: [
+      {
+        code: "MAD",
+        name: "Moroccan dirham",
+        symbol: "د.م."
+      }
+    ]
   },
   {
-    name: 'Mozambique',
-    capital: 'Maputo',
-    languages: ['Portuguese'],
-    population: 26423700,
-    flag: 'https://restcountries.eu/data/moz.svg',
-    currency: 'Mozambican metical',
+    name: "Mozambique",
+    capital: "Maputo",
+    languages: [
+      "Portuguese"
+    ],
+    population: 31255435,
+    flag: "https://flagcdn.com/mz.svg",
+    currencies: [
+      {
+        code: "MZN",
+        name: "Mozambican metical",
+        symbol: "MT"
+      }
+    ]
   },
   {
-    name: 'Myanmar',
-    capital: 'Naypyidaw',
-    languages: ['Burmese'],
-    population: 51419420,
-    flag: 'https://restcountries.eu/data/mmr.svg',
-    currency: 'Burmese kyat',
+    name: "Myanmar",
+    capital: "Naypyidaw",
+    languages: [
+      "Burmese"
+    ],
+    population: 54409794,
+    flag: "https://flagcdn.com/mm.svg",
+    currencies: [
+      {
+        code: "MMK",
+        name: "Burmese kyat",
+        symbol: "Ks"
+      }
+    ]
   },
   {
-    name: 'Namibia',
-    capital: 'Windhoek',
-    languages: ['English', 'Afrikaans'],
-    population: 2324388,
-    flag: 'https://restcountries.eu/data/nam.svg',
-    currency: 'Namibian dollar',
+    name: "Namibia",
+    capital: "Windhoek",
+    languages: [
+      "English",
+      "Afrikaans"
+    ],
+    population: 2540916,
+    flag: "https://flagcdn.com/na.svg",
+    currencies: [
+      {
+        code: "NAD",
+        name: "Namibian dollar",
+        symbol: "$"
+      },
+      {
+        code: "ZAR",
+        name: "South African rand",
+        symbol: "R"
+      }
+    ]
   },
   {
-    name: 'Nauru',
-    capital: 'Yaren',
-    languages: ['English', 'Nauruan'],
-    population: 10084,
-    flag: 'https://restcountries.eu/data/nru.svg',
-    currency: 'Australian dollar',
+    name: "Nauru",
+    capital: "Yaren",
+    languages: [
+      "English",
+      "Nauruan"
+    ],
+    population: 10834,
+    flag: "https://flagcdn.com/nr.svg",
+    currencies: [
+      {
+        code: "AUD",
+        name: "Australian dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Nepal',
-    capital: 'Kathmandu',
-    languages: ['Nepali'],
-    population: 28431500,
-    flag: 'https://restcountries.eu/data/npl.svg',
-    currency: 'Nepalese rupee',
+    name: "Nepal",
+    capital: "Kathmandu",
+    languages: [
+      "Nepali"
+    ],
+    population: 29136808,
+    flag: "https://flagcdn.com/np.svg",
+    currencies: [
+      {
+        code: "NPR",
+        name: "Nepalese rupee",
+        symbol: "₨"
+      }
+    ]
   },
   {
-    name: 'Netherlands',
-    capital: 'Amsterdam',
-    languages: ['Dutch'],
-    population: 17019800,
-    flag: 'https://restcountries.eu/data/nld.svg',
-    currency: 'Euro',
+    name: "Netherlands",
+    capital: "Amsterdam",
+    languages: [
+      "Dutch"
+    ],
+    population: 17441139,
+    flag: "https://flagcdn.com/nl.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'New Caledonia',
-    capital: 'Nouméa',
-    languages: ['French'],
-    population: 268767,
-    flag: 'https://restcountries.eu/data/ncl.svg',
-    currency: 'CFP franc',
+    name: "New Caledonia",
+    capital: "Nouméa",
+    languages: [
+      "French"
+    ],
+    population: 271960,
+    flag: "https://flagcdn.com/nc.svg",
+    currencies: [
+      {
+        code: "XPF",
+        name: "CFP franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'New Zealand',
-    capital: 'Wellington',
-    languages: ['English', 'Māori'],
-    population: 4697854,
-    flag: 'https://restcountries.eu/data/nzl.svg',
-    currency: 'New Zealand dollar',
+    name: "New Zealand",
+    capital: "Wellington",
+    languages: [
+      "English",
+      "Māori"
+    ],
+    population: 5084300,
+    flag: "https://flagcdn.com/nz.svg",
+    currencies: [
+      {
+        code: "NZD",
+        name: "New Zealand dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Nicaragua',
-    capital: 'Managua',
-    languages: ['Spanish'],
-    population: 6262703,
-    flag: 'https://restcountries.eu/data/nic.svg',
-    currency: 'Nicaraguan córdoba',
+    name: "Nicaragua",
+    capital: "Managua",
+    languages: [
+      "Spanish"
+    ],
+    population: 6624554,
+    flag: "https://flagcdn.com/ni.svg",
+    currencies: [
+      {
+        code: "NIO",
+        name: "Nicaraguan córdoba",
+        symbol: "C$"
+      }
+    ]
   },
   {
-    name: 'Niger',
-    capital: 'Niamey',
-    languages: ['French'],
-    population: 20715000,
-    flag: 'https://restcountries.eu/data/ner.svg',
-    currency: 'West African CFA franc',
+    name: "Niger",
+    capital: "Niamey",
+    languages: [
+      "French"
+    ],
+    population: 24206636,
+    flag: "https://flagcdn.com/ne.svg",
+    currencies: [
+      {
+        code: "XOF",
+        name: "West African CFA franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Nigeria',
-    capital: 'Abuja',
-    languages: ['English'],
-    population: 186988000,
-    flag: 'https://restcountries.eu/data/nga.svg',
-    currency: 'Nigerian naira',
+    name: "Nigeria",
+    capital: "Abuja",
+    languages: [
+      "English"
+    ],
+    population: 206139587,
+    flag: "https://flagcdn.com/ng.svg",
+    currencies: [
+      {
+        code: "NGN",
+        name: "Nigerian naira",
+        symbol: "₦"
+      }
+    ]
   },
   {
-    name: 'Niue',
-    capital: 'Alofi',
-    languages: ['English'],
+    name: "Niue",
+    capital: "Alofi",
+    languages: [
+      "English"
+    ],
     population: 1470,
-    flag: 'https://restcountries.eu/data/niu.svg',
-    currency: 'New Zealand dollar',
+    flag: "https://flagcdn.com/nu.svg",
+    currencies: [
+      {
+        code: "NZD",
+        name: "New Zealand dollar",
+        symbol: "$"
+      },
+      {
+        code: "NZD",
+        name: "Niue dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Norfolk Island',
-    capital: 'Kingston',
-    languages: ['English'],
+    name: "Norfolk Island",
+    capital: "Kingston",
+    languages: [
+      "English"
+    ],
     population: 2302,
-    flag: 'https://restcountries.eu/data/nfk.svg',
-    currency: 'Australian dollar',
+    flag: "https://flagcdn.com/nf.svg",
+    currencies: [
+      {
+        code: "AUD",
+        name: "Australian dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
     name: "Korea (Democratic People's Republic of)",
-    capital: 'Pyongyang',
-    languages: ['Korean'],
-    population: 25281000,
-    flag: 'https://restcountries.eu/data/prk.svg',
-    currency: 'North Korean won',
-  },
-  {
-    name: 'Northern Mariana Islands',
-    capital: 'Saipan',
-    languages: ['English', 'Chamorro'],
-    population: 56940,
-    flag: 'https://restcountries.eu/data/mnp.svg',
-    currency: 'United States dollar',
-  },
-  {
-    name: 'Norway',
-    capital: 'Oslo',
-    languages: ['Norwegian', 'Norwegian Bokmål', 'Norwegian Nynorsk'],
-    population: 5223256,
-    flag: 'https://restcountries.eu/data/nor.svg',
-    currency: 'Norwegian krone',
-  },
-  {
-    name: 'Oman',
-    capital: 'Muscat',
-    languages: ['Arabic'],
-    population: 4420133,
-    flag: 'https://restcountries.eu/data/omn.svg',
-    currency: 'Omani rial',
-  },
-  {
-    name: 'Pakistan',
-    capital: 'Islamabad',
-    languages: ['English', 'Urdu'],
-    population: 194125062,
-    flag: 'https://restcountries.eu/data/pak.svg',
-    currency: 'Pakistani rupee',
-  },
-  {
-    name: 'Palau',
-    capital: 'Ngerulmud',
-    languages: ['English'],
-    population: 17950,
-    flag: 'https://restcountries.eu/data/plw.svg',
-    currency: '[E]',
-  },
-  {
-    name: 'Palestine, State of',
-    capital: 'Ramallah',
-    languages: ['Arabic'],
-    population: 4682467,
-    flag: 'https://restcountries.eu/data/pse.svg',
-    currency: 'Israeli new sheqel',
-  },
-  {
-    name: 'Panama',
-    capital: 'Panama City',
-    languages: ['Spanish'],
-    population: 3814672,
-    flag: 'https://restcountries.eu/data/pan.svg',
-    currency: 'Panamanian balboa',
-  },
-  {
-    name: 'Papua New Guinea',
-    capital: 'Port Moresby',
-    languages: ['English'],
-    population: 8083700,
-    flag: 'https://restcountries.eu/data/png.svg',
-    currency: 'Papua New Guinean kina',
-  },
-  {
-    name: 'Paraguay',
-    capital: 'Asunción',
-    languages: ['Spanish', 'Guaraní'],
-    population: 6854536,
-    flag: 'https://restcountries.eu/data/pry.svg',
-    currency: 'Paraguayan guaraní',
-  },
-  {
-    name: 'Peru',
-    capital: 'Lima',
-    languages: ['Spanish'],
-    population: 31488700,
-    flag: 'https://restcountries.eu/data/per.svg',
-    currency: 'Peruvian sol',
-  },
-  {
-    name: 'Philippines',
-    capital: 'Manila',
-    languages: ['English'],
-    population: 103279800,
-    flag: 'https://restcountries.eu/data/phl.svg',
-    currency: 'Philippine peso',
-  },
-  {
-    name: 'Pitcairn',
-    capital: 'Adamstown',
-    languages: ['English'],
-    population: 56,
-    flag: 'https://restcountries.eu/data/pcn.svg',
-    currency: 'New Zealand dollar',
-  },
-  {
-    name: 'Poland',
-    capital: 'Warsaw',
-    languages: ['Polish'],
-    population: 38437239,
-    flag: 'https://restcountries.eu/data/pol.svg',
-    currency: 'Polish złoty',
-  },
-  {
-    name: 'Portugal',
-    capital: 'Lisbon',
-    languages: ['Portuguese'],
-    population: 10374822,
-    flag: 'https://restcountries.eu/data/prt.svg',
-    currency: 'Euro',
-  },
-  {
-    name: 'Puerto Rico',
-    capital: 'San Juan',
-    languages: ['Spanish', 'English'],
-    population: 3474182,
-    flag: 'https://restcountries.eu/data/pri.svg',
-    currency: 'United States dollar',
-  },
-  {
-    name: 'Qatar',
-    capital: 'Doha',
-    languages: ['Arabic'],
-    population: 2587564,
-    flag: 'https://restcountries.eu/data/qat.svg',
-    currency: 'Qatari riyal',
-  },
-  {
-    name: 'Republic of Kosovo',
-    capital: 'Pristina',
-    languages: ['Albanian', 'Serbian'],
-    population: 1733842,
-    flag: 'https://restcountries.eu/data/kos.svg',
-    currency: 'Euro',
-  },
-  {
-    name: 'Réunion',
-    capital: 'Saint-Denis',
-    languages: ['French'],
-    population: 840974,
-    flag: 'https://restcountries.eu/data/reu.svg',
-    currency: 'Euro',
-  },
-  {
-    name: 'Romania',
-    capital: 'Bucharest',
-    languages: ['Romanian'],
-    population: 19861408,
-    flag: 'https://restcountries.eu/data/rou.svg',
-    currency: 'Romanian leu',
-  },
-  {
-    name: 'Russian Federation',
-    capital: 'Moscow',
-    languages: ['Russian'],
-    population: 146599183,
-    flag: 'https://restcountries.eu/data/rus.svg',
-    currency: 'Russian ruble',
-  },
-  {
-    name: 'Rwanda',
-    capital: 'Kigali',
-    languages: ['Kinyarwanda', 'English', 'French'],
-    population: 11553188,
-    flag: 'https://restcountries.eu/data/rwa.svg',
-    currency: 'Rwandan franc',
-  },
-  {
-    name: 'Saint Barthélemy',
-    capital: 'Gustavia',
-    languages: ['French'],
-    population: 9417,
-    flag: 'https://restcountries.eu/data/blm.svg',
-    currency: 'Euro',
-  },
-  {
-    name: 'Saint Helena, Ascension and Tristan da Cunha',
-    capital: 'Jamestown',
-    languages: ['English'],
-    population: 4255,
-    flag: 'https://restcountries.eu/data/shn.svg',
-    currency: 'Saint Helena pound',
-  },
-  {
-    name: 'Saint Kitts and Nevis',
-    capital: 'Basseterre',
-    languages: ['English'],
-    population: 46204,
-    flag: 'https://restcountries.eu/data/kna.svg',
-    currency: 'East Caribbean dollar',
-  },
-  {
-    name: 'Saint Lucia',
-    capital: 'Castries',
-    languages: ['English'],
-    population: 186000,
-    flag: 'https://restcountries.eu/data/lca.svg',
-    currency: 'East Caribbean dollar',
-  },
-  {
-    name: 'Saint Martin (French part)',
-    capital: 'Marigot',
-    languages: ['English', 'French', 'Dutch'],
-    population: 36979,
-    flag: 'https://restcountries.eu/data/maf.svg',
-    currency: 'Euro',
-  },
-  {
-    name: 'Saint Pierre and Miquelon',
-    capital: 'Saint-Pierre',
-    languages: ['French'],
-    population: 6069,
-    flag: 'https://restcountries.eu/data/spm.svg',
-    currency: 'Euro',
-  },
-  {
-    name: 'Saint Vincent and the Grenadines',
-    capital: 'Kingstown',
-    languages: ['English'],
-    population: 109991,
-    flag: 'https://restcountries.eu/data/vct.svg',
-    currency: 'East Caribbean dollar',
-  },
-  {
-    name: 'Samoa',
-    capital: 'Apia',
-    languages: ['Samoan', 'English'],
-    population: 194899,
-    flag: 'https://restcountries.eu/data/wsm.svg',
-    currency: 'Samoan tālā',
-  },
-  {
-    name: 'San Marino',
-    capital: 'City of San Marino',
-    languages: ['Italian'],
-    population: 33005,
-    flag: 'https://restcountries.eu/data/smr.svg',
-    currency: 'Euro',
-  },
-  {
-    name: 'Sao Tome and Principe',
-    capital: 'São Tomé',
-    languages: ['Portuguese'],
-    population: 187356,
-    flag: 'https://restcountries.eu/data/stp.svg',
-    currency: 'São Tomé and Príncipe dobra',
-  },
-  {
-    name: 'Saudi Arabia',
-    capital: 'Riyadh',
-    languages: ['Arabic'],
-    population: 32248200,
-    flag: 'https://restcountries.eu/data/sau.svg',
-    currency: 'Saudi riyal',
-  },
-  {
-    name: 'Senegal',
-    capital: 'Dakar',
-    languages: ['French'],
-    population: 14799859,
-    flag: 'https://restcountries.eu/data/sen.svg',
-    currency: 'West African CFA franc',
-  },
-  {
-    name: 'Serbia',
-    capital: 'Belgrade',
-    languages: ['Serbian'],
-    population: 7076372,
-    flag: 'https://restcountries.eu/data/srb.svg',
-    currency: 'Serbian dinar',
-  },
-  {
-    name: 'Seychelles',
-    capital: 'Victoria',
-    languages: ['French', 'English'],
-    population: 91400,
-    flag: 'https://restcountries.eu/data/syc.svg',
-    currency: 'Seychellois rupee',
-  },
-  {
-    name: 'Sierra Leone',
-    capital: 'Freetown',
-    languages: ['English'],
-    population: 7075641,
-    flag: 'https://restcountries.eu/data/sle.svg',
-    currency: 'Sierra Leonean leone',
-  },
-  {
-    name: 'Singapore',
-    capital: 'Singapore',
-    languages: ['English', 'Malay', 'Tamil', 'Chinese'],
-    population: 5535000,
-    flag: 'https://restcountries.eu/data/sgp.svg',
-    currency: 'Brunei dollar',
-  },
-  {
-    name: 'Sint Maarten (Dutch part)',
-    capital: 'Philipsburg',
-    languages: ['Dutch', 'English'],
-    population: 38247,
-    flag: 'https://restcountries.eu/data/sxm.svg',
-    currency: 'Netherlands Antillean guilder',
-  },
-  {
-    name: 'Slovakia',
-    capital: 'Bratislava',
-    languages: ['Slovak'],
-    population: 5426252,
-    flag: 'https://restcountries.eu/data/svk.svg',
-    currency: 'Euro',
-  },
-  {
-    name: 'Slovenia',
-    capital: 'Ljubljana',
-    languages: ['Slovene'],
-    population: 2064188,
-    flag: 'https://restcountries.eu/data/svn.svg',
-    currency: 'Euro',
-  },
-  {
-    name: 'Solomon Islands',
-    capital: 'Honiara',
-    languages: ['English'],
-    population: 642000,
-    flag: 'https://restcountries.eu/data/slb.svg',
-    currency: 'Solomon Islands dollar',
-  },
-  {
-    name: 'Somalia',
-    capital: 'Mogadishu',
-    languages: ['Somali', 'Arabic'],
-    population: 11079000,
-    flag: 'https://restcountries.eu/data/som.svg',
-    currency: 'Somali shilling',
-  },
-  {
-    name: 'South Africa',
-    capital: 'Pretoria',
+    capital: "Pyongyang",
     languages: [
-      'Afrikaans',
-      'English',
-      'Southern Ndebele',
-      'Southern Sotho',
-      'Swati',
-      'Tswana',
-      'Tsonga',
-      'Venda',
-      'Xhosa',
-      'Zulu',
+      "Korean"
     ],
-    population: 55653654,
-    flag: 'https://restcountries.eu/data/zaf.svg',
-    currency: 'South African rand',
+    population: 25778815,
+    flag: "https://flagcdn.com/kp.svg",
+    currencies: [
+      {
+        code: "KPW",
+        name: "North Korean won",
+        symbol: "₩"
+      }
+    ]
   },
   {
-    name: 'South Georgia and the South Sandwich Islands',
-    capital: 'King Edward Point',
-    languages: ['English'],
+    name: "Northern Mariana Islands",
+    capital: "Saipan",
+    languages: [
+      "English",
+      "Chamorro"
+    ],
+    population: 57557,
+    flag: "https://flagcdn.com/mp.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
+  },
+  {
+    name: "Norway",
+    capital: "Oslo",
+    languages: [
+      "Norwegian",
+      "Norwegian Bokmål",
+      "Norwegian Nynorsk"
+    ],
+    population: 5379475,
+    flag: "https://flagcdn.com/no.svg",
+    currencies: [
+      {
+        code: "NOK",
+        name: "Norwegian krone",
+        symbol: "kr"
+      }
+    ]
+  },
+  {
+    name: "Oman",
+    capital: "Muscat",
+    languages: [
+      "Arabic"
+    ],
+    population: 5106622,
+    flag: "https://flagcdn.com/om.svg",
+    currencies: [
+      {
+        code: "OMR",
+        name: "Omani rial",
+        symbol: "ر.ع."
+      }
+    ]
+  },
+  {
+    name: "Pakistan",
+    capital: "Islamabad",
+    languages: [
+      "Urdu",
+      "English"
+    ],
+    population: 220892331,
+    flag: "https://flagcdn.com/pk.svg",
+    currencies: [
+      {
+        code: "PKR",
+        name: "Pakistani rupee",
+        symbol: "₨"
+      }
+    ]
+  },
+  {
+    name: "Palau",
+    capital: "Ngerulmud",
+    languages: [
+      "English"
+    ],
+    population: 18092,
+    flag: "https://flagcdn.com/pw.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
+  },
+  {
+    name: "Palestine, State of",
+    capital: "Ramallah",
+    languages: [
+      "Arabic"
+    ],
+    population: 4803269,
+    flag: "https://flagcdn.com/ps.svg",
+    currencies: [
+      {
+        code: "EGP",
+        name: "Egyptian pound",
+        symbol: "E£"
+      },
+      {
+        code: "ILS",
+        name: "Israeli new shekel",
+        symbol: "₪"
+      },
+      {
+        code: "JOD",
+        name: "Jordanian dinar",
+        symbol: "د.أ"
+      }
+    ]
+  },
+  {
+    name: "Panama",
+    capital: "Panama City",
+    languages: [
+      "Spanish"
+    ],
+    population: 4314768,
+    flag: "https://flagcdn.com/pa.svg",
+    currencies: [
+      {
+        code: "PAB",
+        name: "Panamanian balboa",
+        symbol: "B/."
+      },
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
+  },
+  {
+    name: "Papua New Guinea",
+    capital: "Port Moresby",
+    languages: [
+      "English"
+    ],
+    population: 8947027,
+    flag: "https://flagcdn.com/pg.svg",
+    currencies: [
+      {
+        code: "PGK",
+        name: "Papua New Guinean kina",
+        symbol: "K"
+      }
+    ]
+  },
+  {
+    name: "Paraguay",
+    capital: "Asunción",
+    languages: [
+      "Spanish",
+      "Guaraní"
+    ],
+    population: 7132530,
+    flag: "https://flagcdn.com/py.svg",
+    currencies: [
+      {
+        code: "PYG",
+        name: "Paraguayan guaraní",
+        symbol: "₲"
+      }
+    ]
+  },
+  {
+    name: "Peru",
+    capital: "Lima",
+    languages: [
+      "Spanish"
+    ],
+    population: 32971846,
+    flag: "https://flagcdn.com/pe.svg",
+    currencies: [
+      {
+        code: "PEN",
+        name: "Peruvian sol",
+        symbol: "S/."
+      }
+    ]
+  },
+  {
+    name: "Philippines",
+    capital: "Manila",
+    languages: [
+      "English"
+    ],
+    population: 109581085,
+    flag: "https://flagcdn.com/ph.svg",
+    currencies: [
+      {
+        code: "PHP",
+        name: "Philippine peso",
+        symbol: "₱"
+      }
+    ]
+  },
+  {
+    name: "Pitcairn",
+    capital: "Adamstown",
+    languages: [
+      "English"
+    ],
+    population: 56,
+    flag: "https://flagcdn.com/pn.svg",
+    currencies: [
+      {
+        code: "NZD",
+        name: "New Zealand dollar",
+        symbol: "$"
+      },
+      {
+        code: "PND",
+        name: "Pitcairn Islands dollar",
+        symbol: "$"
+      }
+    ]
+  },
+  {
+    name: "Poland",
+    capital: "Warsaw",
+    languages: [
+      "Polish"
+    ],
+    population: 37950802,
+    flag: "https://flagcdn.com/pl.svg",
+    currencies: [
+      {
+        code: "PLN",
+        name: "Polish złoty",
+        symbol: "zł"
+      }
+    ]
+  },
+  {
+    name: "Portugal",
+    capital: "Lisbon",
+    languages: [
+      "Portuguese"
+    ],
+    population: 10305564,
+    flag: "https://flagcdn.com/pt.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
+  },
+  {
+    name: "Puerto Rico",
+    capital: "San Juan",
+    languages: [
+      "Spanish",
+      "English"
+    ],
+    population: 3194034,
+    flag: "https://flagcdn.com/pr.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
+  },
+  {
+    name: "Qatar",
+    capital: "Doha",
+    languages: [
+      "Arabic"
+    ],
+    population: 2881060,
+    flag: "https://flagcdn.com/qa.svg",
+    currencies: [
+      {
+        code: "QAR",
+        name: "Qatari riyal",
+        symbol: "ر.ق"
+      }
+    ]
+  },
+  {
+    name: "Republic of Kosovo",
+    capital: "Pristina",
+    languages: [
+      "Albanian",
+      "Serbian"
+    ],
+    population: 1775378,
+    flag: "https://flagcdn.com/xk.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
+  },
+  {
+    name: "Réunion",
+    capital: "Saint-Denis",
+    languages: [
+      "French"
+    ],
+    population: 840974,
+    flag: "https://flagcdn.com/re.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
+  },
+  {
+    name: "Romania",
+    capital: "Bucharest",
+    languages: [
+      "Romanian"
+    ],
+    population: 19286123,
+    flag: "https://flagcdn.com/ro.svg",
+    currencies: [
+      {
+        code: "RON",
+        name: "Romanian leu",
+        symbol: "lei"
+      }
+    ]
+  },
+  {
+    name: "Russian Federation",
+    capital: "Moscow",
+    languages: [
+      "Russian"
+    ],
+    population: 144104080,
+    flag: "https://flagcdn.com/ru.svg",
+    currencies: [
+      {
+        code: "RUB",
+        name: "Russian ruble",
+        symbol: "₽"
+      }
+    ]
+  },
+  {
+    name: "Rwanda",
+    capital: "Kigali",
+    languages: [
+      "Kinyarwanda",
+      "English",
+      "French"
+    ],
+    population: 12952209,
+    flag: "https://flagcdn.com/rw.svg",
+    currencies: [
+      {
+        code: "RWF",
+        name: "Rwandan franc",
+        symbol: "Fr"
+      }
+    ]
+  },
+  {
+    name: "Saint Barthélemy",
+    capital: "Gustavia",
+    languages: [
+      "French"
+    ],
+    population: 9417,
+    flag: "https://flagcdn.com/bl.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
+  },
+  {
+    name: "Saint Helena, Ascension and Tristan da Cunha",
+    capital: "Jamestown",
+    languages: [
+      "English"
+    ],
+    population: 4255,
+    flag: "https://flagcdn.com/sh.svg",
+    currencies: [
+      {
+        code: "SHP",
+        name: "Saint Helena pound",
+        symbol: "£"
+      }
+    ]
+  },
+  {
+    name: "Saint Kitts and Nevis",
+    capital: "Basseterre",
+    languages: [
+      "English"
+    ],
+    population: 53192,
+    flag: "https://flagcdn.com/kn.svg",
+    currencies: [
+      {
+        code: "XCD",
+        name: "East Caribbean dollar",
+        symbol: "$"
+      }
+    ]
+  },
+  {
+    name: "Saint Lucia",
+    capital: "Castries",
+    languages: [
+      "English"
+    ],
+    population: 183629,
+    flag: "https://flagcdn.com/lc.svg",
+    currencies: [
+      {
+        code: "XCD",
+        name: "East Caribbean dollar",
+        symbol: "$"
+      }
+    ]
+  },
+  {
+    name: "Saint Martin (French part)",
+    capital: "Marigot",
+    languages: [
+      "English",
+      "French",
+      "Dutch"
+    ],
+    population: 38659,
+    flag: "https://flagcdn.com/mf.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
+  },
+  {
+    name: "Saint Pierre and Miquelon",
+    capital: "Saint-Pierre",
+    languages: [
+      "French"
+    ],
+    population: 6069,
+    flag: "https://flagcdn.com/pm.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
+  },
+  {
+    name: "Saint Vincent and the Grenadines",
+    capital: "Kingstown",
+    languages: [
+      "English"
+    ],
+    population: 110947,
+    flag: "https://flagcdn.com/vc.svg",
+    currencies: [
+      {
+        code: "XCD",
+        name: "East Caribbean dollar",
+        symbol: "$"
+      }
+    ]
+  },
+  {
+    name: "Samoa",
+    capital: "Apia",
+    languages: [
+      "Samoan",
+      "English"
+    ],
+    population: 198410,
+    flag: "https://flagcdn.com/ws.svg",
+    currencies: [
+      {
+        code: "WST",
+        name: "Samoan tālā",
+        symbol: "T"
+      }
+    ]
+  },
+  {
+    name: "San Marino",
+    capital: "City of San Marino",
+    languages: [
+      "Italian"
+    ],
+    population: 33938,
+    flag: "https://flagcdn.com/sm.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
+  },
+  {
+    name: "Sao Tome and Principe",
+    capital: "São Tomé",
+    languages: [
+      "Portuguese"
+    ],
+    population: 219161,
+    flag: "https://flagcdn.com/st.svg",
+    currencies: [
+      {
+        code: "STD",
+        name: "São Tomé and Príncipe dobra",
+        symbol: "Db"
+      }
+    ]
+  },
+  {
+    name: "Saudi Arabia",
+    capital: "Riyadh",
+    languages: [
+      "Arabic"
+    ],
+    population: 34813867,
+    flag: "https://flagcdn.com/sa.svg",
+    currencies: [
+      {
+        code: "SAR",
+        name: "Saudi riyal",
+        symbol: "ر.س"
+      }
+    ]
+  },
+  {
+    name: "Senegal",
+    capital: "Dakar",
+    languages: [
+      "French"
+    ],
+    population: 16743930,
+    flag: "https://flagcdn.com/sn.svg",
+    currencies: [
+      {
+        code: "XOF",
+        name: "West African CFA franc",
+        symbol: "Fr"
+      }
+    ]
+  },
+  {
+    name: "Serbia",
+    capital: "Belgrade",
+    languages: [
+      "Serbian"
+    ],
+    population: 6908224,
+    flag: "https://flagcdn.com/rs.svg",
+    currencies: [
+      {
+        code: "RSD",
+        name: "Serbian dinar",
+        symbol: "дин."
+      }
+    ]
+  },
+  {
+    name: "Seychelles",
+    capital: "Victoria",
+    languages: [
+      "French",
+      "English"
+    ],
+    population: 98462,
+    flag: "https://flagcdn.com/sc.svg",
+    currencies: [
+      {
+        code: "SCR",
+        name: "Seychellois rupee",
+        symbol: "₨"
+      }
+    ]
+  },
+  {
+    name: "Sierra Leone",
+    capital: "Freetown",
+    languages: [
+      "English"
+    ],
+    population: 7976985,
+    flag: "https://flagcdn.com/sl.svg",
+    currencies: [
+      {
+        code: "SLL",
+        name: "Sierra Leonean leone",
+        symbol: "Le"
+      }
+    ]
+  },
+  {
+    name: "Singapore",
+    capital: "Singapore",
+    languages: [
+      "English",
+      "Malay",
+      "Tamil",
+      "Chinese"
+    ],
+    population: 5685807,
+    flag: "https://flagcdn.com/sg.svg",
+    currencies: [
+      {
+        code: "BND",
+        name: "Brunei dollar",
+        symbol: "$"
+      },
+      {
+        code: "SGD",
+        name: "Singapore dollar",
+        symbol: "$"
+      }
+    ]
+  },
+  {
+    name: "Sint Maarten (Dutch part)",
+    capital: "Philipsburg",
+    languages: [
+      "Dutch",
+      "English"
+    ],
+    population: 40812,
+    flag: "https://flagcdn.com/sx.svg",
+    currencies: [
+      {
+        code: "ANG",
+        name: "Netherlands Antillean guilder",
+        symbol: "ƒ"
+      }
+    ]
+  },
+  {
+    name: "Slovakia",
+    capital: "Bratislava",
+    languages: [
+      "Slovak"
+    ],
+    population: 5458827,
+    flag: "https://flagcdn.com/sk.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
+  },
+  {
+    name: "Slovenia",
+    capital: "Ljubljana",
+    languages: [
+      "Slovene"
+    ],
+    population: 2100126,
+    flag: "https://flagcdn.com/si.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
+  },
+  {
+    name: "Solomon Islands",
+    capital: "Honiara",
+    languages: [
+      "English"
+    ],
+    population: 686878,
+    flag: "https://flagcdn.com/sb.svg",
+    currencies: [
+      {
+        code: "SBD",
+        name: "Solomon Islands dollar",
+        symbol: "$"
+      }
+    ]
+  },
+  {
+    name: "Somalia",
+    capital: "Mogadishu",
+    languages: [
+      "Somali",
+      "Arabic"
+    ],
+    population: 15893219,
+    flag: "https://flagcdn.com/so.svg",
+    currencies: [
+      {
+        code: "SOS",
+        name: "Somali shilling",
+        symbol: "Sh"
+      }
+    ]
+  },
+  {
+    name: "South Africa",
+    capital: "Pretoria",
+    languages: [
+      "Afrikaans",
+      "English",
+      "Southern Ndebele",
+      "Southern Sotho",
+      "Swati",
+      "Tswana",
+      "Tsonga",
+      "Venda",
+      "Xhosa",
+      "Zulu"
+    ],
+    population: 59308690,
+    flag: "https://flagcdn.com/za.svg",
+    currencies: [
+      {
+        code: "ZAR",
+        name: "South African rand",
+        symbol: "R"
+      }
+    ]
+  },
+  {
+    name: "South Georgia and the South Sandwich Islands",
+    capital: "King Edward Point",
+    languages: [
+      "English"
+    ],
     population: 30,
-    flag: 'https://restcountries.eu/data/sgs.svg',
-    currency: 'British pound',
+    flag: "https://flagcdn.com/gs.svg",
+    currencies: [
+      {
+        code: "FKP",
+        name: "Falkland Islands Pound",
+        symbol: "£"
+      }
+    ]
   },
   {
-    name: 'Korea (Republic of)',
-    capital: 'Seoul',
-    languages: ['Korean'],
-    population: 50801405,
-    flag: 'https://restcountries.eu/data/kor.svg',
-    currency: 'South Korean won',
+    name: "Korea (Republic of)",
+    capital: "Seoul",
+    languages: [
+      "Korean"
+    ],
+    population: 51780579,
+    flag: "https://flagcdn.com/kr.svg",
+    currencies: [
+      {
+        code: "KRW",
+        name: "South Korean won",
+        symbol: "₩"
+      }
+    ]
   },
   {
-    name: 'South Sudan',
-    capital: 'Juba',
-    languages: ['English'],
-    population: 12131000,
-    flag: 'https://restcountries.eu/data/ssd.svg',
-    currency: 'South Sudanese pound',
+    name: "Spain",
+    capital: "Madrid",
+    languages: [
+      "Spanish"
+    ],
+    population: 47351567,
+    flag: "https://flagcdn.com/es.svg",
+    currencies: [
+      {
+        code: "EUR",
+        name: "Euro",
+        symbol: "€"
+      }
+    ]
   },
   {
-    name: 'Spain',
-    capital: 'Madrid',
-    languages: ['Spanish'],
-    population: 46438422,
-    flag: 'https://restcountries.eu/data/esp.svg',
-    currency: 'Euro',
+    name: "Sri Lanka",
+    capital: "Sri Jayawardenepura Kotte",
+    languages: [
+      "Sinhalese",
+      "Tamil"
+    ],
+    population: 21919000,
+    flag: "https://flagcdn.com/lk.svg",
+    currencies: [
+      {
+        code: "LKR",
+        name: "Sri Lankan rupee",
+        symbol: "Rs"
+      }
+    ]
   },
   {
-    name: 'Sri Lanka',
-    capital: 'Colombo',
-    languages: ['Sinhalese', 'Tamil'],
-    population: 20966000,
-    flag: 'https://restcountries.eu/data/lka.svg',
-    currency: 'Sri Lankan rupee',
+    name: "Sudan",
+    capital: "Khartoum",
+    languages: [
+      "Arabic",
+      "English"
+    ],
+    population: 43849269,
+    flag: "https://flagcdn.com/sd.svg",
+    currencies: [
+      {
+        code: "SDG",
+        name: "Sudanese pound",
+        symbol: "ج.س."
+      }
+    ]
   },
   {
-    name: 'Sudan',
-    capital: 'Khartoum',
-    languages: ['Arabic', 'English'],
-    population: 39598700,
-    flag: 'https://restcountries.eu/data/sdn.svg',
-    currency: 'Sudanese pound',
+    name: "South Sudan",
+    capital: "Juba",
+    languages: [
+      "English"
+    ],
+    population: 11193729,
+    flag: "https://flagcdn.com/ss.svg",
+    currencies: [
+      {
+        code: "SSP",
+        name: "South Sudanese pound",
+        symbol: "£"
+      }
+    ]
   },
   {
-    name: 'Suriname',
-    capital: 'Paramaribo',
-    languages: ['Dutch'],
-    population: 541638,
-    flag: 'https://restcountries.eu/data/sur.svg',
-    currency: 'Surinamese dollar',
+    name: "Suriname",
+    capital: "Paramaribo",
+    languages: [
+      "Dutch"
+    ],
+    population: 586634,
+    flag: "https://flagcdn.com/sr.svg",
+    currencies: [
+      {
+        code: "SRD",
+        name: "Surinamese dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Svalbard and Jan Mayen',
-    capital: 'Longyearbyen',
-    languages: ['Norwegian'],
+    name: "Svalbard and Jan Mayen",
+    capital: "Longyearbyen",
+    languages: [
+      "Norwegian"
+    ],
     population: 2562,
-    flag: 'https://restcountries.eu/data/sjm.svg',
-    currency: 'Norwegian krone',
+    flag: "https://flagcdn.com/sj.svg",
+    currencies: [
+      {
+        code: "NOK",
+        name: "Norwegian krone",
+        symbol: "kr"
+      }
+    ]
   },
   {
-    name: 'Swaziland',
-    capital: 'Lobamba',
-    languages: ['English', 'Swati'],
-    population: 1132657,
-    flag: 'https://restcountries.eu/data/swz.svg',
-    currency: 'Swazi lilangeni',
+    name: "Swaziland",
+    capital: "Mbabane",
+    languages: [
+      "English",
+      "Swati"
+    ],
+    population: 1160164,
+    flag: "https://flagcdn.com/sz.svg",
+    currencies: [
+      {
+        code: "SZL",
+        name: "Swazi lilangeni",
+        symbol: "L"
+      }
+    ]
   },
   {
-    name: 'Sweden',
-    capital: 'Stockholm',
-    languages: ['Swedish'],
-    population: 9894888,
-    flag: 'https://restcountries.eu/data/swe.svg',
-    currency: 'Swedish krona',
+    name: "Sweden",
+    capital: "Stockholm",
+    languages: [
+      "Swedish"
+    ],
+    population: 10353442,
+    flag: "https://flagcdn.com/se.svg",
+    currencies: [
+      {
+        code: "SEK",
+        name: "Swedish krona",
+        symbol: "kr"
+      }
+    ]
   },
   {
-    name: 'Switzerland',
-    capital: 'Bern',
-    languages: ['German', 'French', 'Italian'],
-    population: 8341600,
-    flag: 'https://restcountries.eu/data/che.svg',
-    currency: 'Swiss franc',
+    name: "Switzerland",
+    capital: "Bern",
+    languages: [
+      "German",
+      "French",
+      "Italian",
+      "Romansh"
+    ],
+    population: 8636896,
+    flag: "https://flagcdn.com/ch.svg",
+    currencies: [
+      {
+        code: "CHF",
+        name: "Swiss franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Syrian Arab Republic',
-    capital: 'Damascus',
-    languages: ['Arabic'],
-    population: 18564000,
-    flag: 'https://restcountries.eu/data/syr.svg',
-    currency: 'Syrian pound',
+    name: "Syrian Arab Republic",
+    capital: "Damascus",
+    languages: [
+      "Arabic"
+    ],
+    population: 17500657,
+    flag: "https://flagcdn.com/sy.svg",
+    currencies: [
+      {
+        code: "SYP",
+        name: "Syrian pound",
+        symbol: "£"
+      }
+    ]
   },
   {
-    name: 'Taiwan',
-    capital: 'Taipei',
-    languages: ['Chinese'],
+    name: "Taiwan",
+    capital: "Taipei",
+    languages: [
+      "Chinese"
+    ],
     population: 23503349,
-    flag: 'https://restcountries.eu/data/twn.svg',
-    currency: 'New Taiwan dollar',
+    flag: "https://flagcdn.com/tw.svg",
+    currencies: [
+      {
+        code: "TWD",
+        name: "New Taiwan dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Tajikistan',
-    capital: 'Dushanbe',
-    languages: ['Tajik', 'Russian'],
-    population: 8593600,
-    flag: 'https://restcountries.eu/data/tjk.svg',
-    currency: 'Tajikistani somoni',
+    name: "Tajikistan",
+    capital: "Dushanbe",
+    languages: [
+      "Tajik",
+      "Russian"
+    ],
+    population: 9537642,
+    flag: "https://flagcdn.com/tj.svg",
+    currencies: [
+      {
+        code: "TJS",
+        name: "Tajikistani somoni",
+        symbol: "ЅМ"
+      }
+    ]
   },
   {
-    name: 'Tanzania, United Republic of',
-    capital: 'Dodoma',
-    languages: ['Swahili', 'English'],
-    population: 55155000,
-    flag: 'https://restcountries.eu/data/tza.svg',
-    currency: 'Tanzanian shilling',
+    name: "Tanzania, United Republic of",
+    capital: "Dodoma",
+    languages: [
+      "Swahili",
+      "English"
+    ],
+    population: 59734213,
+    flag: "https://flagcdn.com/tz.svg",
+    currencies: [
+      {
+        code: "TZS",
+        name: "Tanzanian shilling",
+        symbol: "Sh"
+      }
+    ]
   },
   {
-    name: 'Thailand',
-    capital: 'Bangkok',
-    languages: ['Thai'],
-    population: 65327652,
-    flag: 'https://restcountries.eu/data/tha.svg',
-    currency: 'Thai baht',
+    name: "Thailand",
+    capital: "Bangkok",
+    languages: [
+      "Thai"
+    ],
+    population: 69799978,
+    flag: "https://flagcdn.com/th.svg",
+    currencies: [
+      {
+        code: "THB",
+        name: "Thai baht",
+        symbol: "฿"
+      }
+    ]
   },
   {
-    name: 'Timor-Leste',
-    capital: 'Dili',
-    languages: ['Portuguese'],
-    population: 1167242,
-    flag: 'https://restcountries.eu/data/tls.svg',
-    currency: 'United States dollar',
+    name: "Timor-Leste",
+    capital: "Dili",
+    languages: [
+      "Portuguese"
+    ],
+    population: 1318442,
+    flag: "https://flagcdn.com/tl.svg",
+    currencies: [
+      {
+        code: "THB",
+        name: "Thai baht",
+        symbol: "฿"
+      }
+    ]
   },
   {
-    name: 'Togo',
-    capital: 'Lomé',
-    languages: ['French'],
-    population: 7143000,
-    flag: 'https://restcountries.eu/data/tgo.svg',
-    currency: 'West African CFA franc',
+    name: "Togo",
+    capital: "Lomé",
+    languages: [
+      "French"
+    ],
+    population: 8278737,
+    flag: "https://flagcdn.com/tg.svg",
+    currencies: [
+      {
+        code: "XOF",
+        name: "West African CFA franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Tokelau',
-    capital: 'Fakaofo',
-    languages: ['English'],
+    name: "Tokelau",
+    capital: "Fakaofo",
+    languages: [
+      "English"
+    ],
     population: 1411,
-    flag: 'https://restcountries.eu/data/tkl.svg',
-    currency: 'New Zealand dollar',
+    flag: "https://flagcdn.com/tk.svg",
+    currencies: [
+      {
+        code: "NZD",
+        name: "New Zealand dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Tonga',
+    name: "Tonga",
     capital: "Nuku'alofa",
-    languages: ['English', 'Tonga (Tonga Islands)'],
-    population: 103252,
-    flag: 'https://restcountries.eu/data/ton.svg',
-    currency: 'Tongan paʻanga',
+    languages: [
+      "English",
+      "Tonga (Tonga Islands)"
+    ],
+    population: 105697,
+    flag: "https://flagcdn.com/to.svg",
+    currencies: [
+      {
+        code: "TOP",
+        name: "Tongan paʻanga",
+        symbol: "T$"
+      }
+    ]
   },
   {
-    name: 'Trinidad and Tobago',
-    capital: 'Port of Spain',
-    languages: ['English'],
-    population: 1349667,
-    flag: 'https://restcountries.eu/data/tto.svg',
-    currency: 'Trinidad and Tobago dollar',
+    name: "Trinidad and Tobago",
+    capital: "Port of Spain",
+    languages: [
+      "English"
+    ],
+    population: 1399491,
+    flag: "https://flagcdn.com/tt.svg",
+    currencies: [
+      {
+        code: "TTD",
+        name: "Trinidad and Tobago dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Tunisia',
-    capital: 'Tunis',
-    languages: ['Arabic'],
-    population: 11154400,
-    flag: 'https://restcountries.eu/data/tun.svg',
-    currency: 'Tunisian dinar',
+    name: "Tunisia",
+    capital: "Tunis",
+    languages: [
+      "Arabic"
+    ],
+    population: 11818618,
+    flag: "https://flagcdn.com/tn.svg",
+    currencies: [
+      {
+        code: "TND",
+        name: "Tunisian dinar",
+        symbol: "د.ت"
+      }
+    ]
   },
   {
-    name: 'Turkey',
-    capital: 'Ankara',
-    languages: ['Turkish'],
-    population: 78741053,
-    flag: 'https://restcountries.eu/data/tur.svg',
-    currency: 'Turkish lira',
+    name: "Turkey",
+    capital: "Ankara",
+    languages: [
+      "Turkish"
+    ],
+    population: 84339067,
+    flag: "https://flagcdn.com/tr.svg",
+    currencies: [
+      {
+        code: "TRY",
+        name: "Turkish lira",
+        symbol: "֏"
+      }
+    ]
   },
   {
-    name: 'Turkmenistan',
-    capital: 'Ashgabat',
-    languages: ['Turkmen', 'Russian'],
-    population: 4751120,
-    flag: 'https://restcountries.eu/data/tkm.svg',
-    currency: 'Turkmenistan manat',
+    name: "Turkmenistan",
+    capital: "Ashgabat",
+    languages: [
+      "Turkmen",
+      "Russian"
+    ],
+    population: 6031187,
+    flag: "https://flagcdn.com/tm.svg",
+    currencies: [
+      {
+        code: "TMT",
+        name: "Turkmenistan manat",
+        symbol: "m"
+      }
+    ]
   },
   {
-    name: 'Turks and Caicos Islands',
-    capital: 'Cockburn Town',
-    languages: ['English'],
-    population: 31458,
-    flag: 'https://restcountries.eu/data/tca.svg',
-    currency: 'United States dollar',
+    name: "Turks and Caicos Islands",
+    capital: "Cockburn Town",
+    languages: [
+      "English"
+    ],
+    population: 38718,
+    flag: "https://flagcdn.com/tc.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Tuvalu',
-    capital: 'Funafuti',
-    languages: ['English'],
-    population: 10640,
-    flag: 'https://restcountries.eu/data/tuv.svg',
-    currency: 'Australian dollar',
+    name: "Tuvalu",
+    capital: "Funafuti",
+    languages: [
+      "English"
+    ],
+    population: 11792,
+    flag: "https://flagcdn.com/tv.svg",
+    currencies: [
+      {
+        code: "AUD",
+        name: "Australian dollar",
+        symbol: "$"
+      },
+      {
+        code: "TVD[G]",
+        name: "Tuvaluan dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Uganda',
-    capital: 'Kampala',
-    languages: ['English', 'Swahili'],
-    population: 33860700,
-    flag: 'https://restcountries.eu/data/uga.svg',
-    currency: 'Ugandan shilling',
+    name: "Uganda",
+    capital: "Kampala",
+    languages: [
+      "English",
+      "Swahili"
+    ],
+    population: 45741000,
+    flag: "https://flagcdn.com/ug.svg",
+    currencies: [
+      {
+        code: "UGX",
+        name: "Ugandan shilling",
+        symbol: "Sh"
+      }
+    ]
   },
   {
-    name: 'Ukraine',
-    capital: 'Kiev',
-    languages: ['Ukrainian'],
-    population: 42692393,
-    flag: 'https://restcountries.eu/data/ukr.svg',
-    currency: 'Ukrainian hryvnia',
+    name: "Ukraine",
+    capital: "Kyiv",
+    languages: [
+      "Ukrainian"
+    ],
+    population: 44134693,
+    flag: "https://flagcdn.com/ua.svg",
+    currencies: [
+      {
+        code: "UAH",
+        name: "Ukrainian hryvnia",
+        symbol: "₴"
+      }
+    ]
   },
   {
-    name: 'United Arab Emirates',
-    capital: 'Abu Dhabi',
-    languages: ['Arabic'],
-    population: 9856000,
-    flag: 'https://restcountries.eu/data/are.svg',
-    currency: 'United Arab Emirates dirham',
+    name: "United Arab Emirates",
+    capital: "Abu Dhabi",
+    languages: [
+      "Arabic"
+    ],
+    population: 9890400,
+    flag: "https://flagcdn.com/ae.svg",
+    currencies: [
+      {
+        code: "AED",
+        name: "United Arab Emirates dirham",
+        symbol: "د.إ"
+      }
+    ]
   },
   {
-    name: 'United Kingdom of Great Britain and Northern Ireland',
-    capital: 'London',
-    languages: ['English'],
-    population: 65110000,
-    flag: 'https://restcountries.eu/data/gbr.svg',
-    currency: 'British pound',
+    name: "United Kingdom of Great Britain and Northern Ireland",
+    capital: "London",
+    languages: [
+      "English"
+    ],
+    population: 67215293,
+    flag: "https://flagcdn.com/gb.svg",
+    currencies: [
+      {
+        code: "GBP",
+        name: "British pound",
+        symbol: "£"
+      }
+    ]
   },
   {
-    name: 'United States of America',
-    capital: 'Washington, D.C.',
-    languages: ['English'],
-    population: 323947000,
-    flag: 'https://restcountries.eu/data/usa.svg',
-    currency: 'United States dollar',
+    name: "United States of America",
+    capital: "Washington, D.C.",
+    languages: [
+      "English"
+    ],
+    population: 329484123,
+    flag: "https://flagcdn.com/us.svg",
+    currencies: [
+      {
+        code: "USD",
+        name: "United States dollar",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Uruguay',
-    capital: 'Montevideo',
-    languages: ['Spanish'],
-    population: 3480222,
-    flag: 'https://restcountries.eu/data/ury.svg',
-    currency: 'Uruguayan peso',
+    name: "Uruguay",
+    capital: "Montevideo",
+    languages: [
+      "Spanish"
+    ],
+    population: 3473727,
+    flag: "https://flagcdn.com/uy.svg",
+    currencies: [
+      {
+        code: "UYU",
+        name: "Uruguayan peso",
+        symbol: "$"
+      }
+    ]
   },
   {
-    name: 'Uzbekistan',
-    capital: 'Tashkent',
-    languages: ['Uzbek', 'Russian'],
-    population: 31576400,
-    flag: 'https://restcountries.eu/data/uzb.svg',
-    currency: "Uzbekistani so'm",
+    name: "Uzbekistan",
+    capital: "Tashkent",
+    languages: [
+      "Uzbek",
+      "Russian"
+    ],
+    population: 34232050,
+    flag: "https://flagcdn.com/uz.svg",
+    currencies: [
+      {
+        code: "UZS",
+        name: "Uzbekistani so'm",
+        symbol: "so'm"
+      }
+    ]
   },
   {
-    name: 'Vanuatu',
-    capital: 'Port Vila',
-    languages: ['Bislama', 'English', 'French'],
-    population: 277500,
-    flag: 'https://restcountries.eu/data/vut.svg',
-    currency: 'Vanuatu vatu',
+    name: "Vanuatu",
+    capital: "Port Vila",
+    languages: [
+      "Bislama",
+      "English",
+      "French"
+    ],
+    population: 307150,
+    flag: "https://flagcdn.com/vu.svg",
+    currencies: [
+      {
+        code: "VUV",
+        name: "Vanuatu vatu",
+        symbol: "Vt"
+      }
+    ]
   },
   {
-    name: 'Venezuela (Bolivarian Republic of)',
-    capital: 'Caracas',
-    languages: ['Spanish'],
-    population: 31028700,
-    flag: 'https://restcountries.eu/data/ven.svg',
-    currency: 'Venezuelan bolívar',
+    name: "Venezuela (Bolivarian Republic of)",
+    capital: "Caracas",
+    languages: [
+      "Spanish"
+    ],
+    population: 28435943,
+    flag: "https://flagcdn.com/ve.svg",
+    currencies: [
+      {
+        code: "VEF",
+        name: "Venezuelan bolívar",
+        symbol: "Bs S"
+      }
+    ]
   },
   {
-    name: 'Viet Nam',
-    capital: 'Hanoi',
-    languages: ['Vietnamese'],
-    population: 92700000,
-    flag: 'https://restcountries.eu/data/vnm.svg',
-    currency: 'Vietnamese đồng',
+    name: "Vietnam",
+    capital: "Hanoi",
+    languages: [
+      "Vietnamese"
+    ],
+    population: 97338583,
+    flag: "https://flagcdn.com/vn.svg",
+    currencies: [
+      {
+        code: "VND",
+        name: "Vietnamese đồng",
+        symbol: "₫"
+      }
+    ]
   },
   {
-    name: 'Wallis and Futuna',
-    capital: 'Mata-Utu',
-    languages: ['French'],
+    name: "Wallis and Futuna",
+    capital: "Mata-Utu",
+    languages: [
+      "French"
+    ],
     population: 11750,
-    flag: 'https://restcountries.eu/data/wlf.svg',
-    currency: 'CFP franc',
+    flag: "https://flagcdn.com/wf.svg",
+    currencies: [
+      {
+        code: "XPF",
+        name: "CFP franc",
+        symbol: "Fr"
+      }
+    ]
   },
   {
-    name: 'Western Sahara',
-    capital: 'El Aaiún',
-    languages: ['Spanish'],
+    name: "Western Sahara",
+    capital: "El Aaiún",
+    languages: [
+      "Spanish"
+    ],
     population: 510713,
-    flag: 'https://restcountries.eu/data/esh.svg',
-    currency: 'Moroccan dirham',
+    flag: "https://flagcdn.com/eh.svg",
+    currencies: [
+      {
+        code: "MAD",
+        name: "Moroccan dirham",
+        symbol: "د.م."
+      },
+      {
+        code: "DZD",
+        name: "Algerian dinar",
+        symbol: "د.ج"
+      }
+    ]
   },
   {
-    name: 'Yemen',
+    name: "Yemen",
     capital: "Sana'a",
-    languages: ['Arabic'],
-    population: 27478000,
-    flag: 'https://restcountries.eu/data/yem.svg',
-    currency: 'Yemeni rial',
+    languages: [
+      "Arabic"
+    ],
+    population: 29825968,
+    flag: "https://flagcdn.com/ye.svg",
+    currencies: [
+      {
+        code: "YER",
+        name: "Yemeni rial",
+        symbol: "﷼"
+      }
+    ]
   },
   {
-    name: 'Zambia',
-    capital: 'Lusaka',
-    languages: ['English'],
-    population: 15933883,
-    flag: 'https://restcountries.eu/data/zmb.svg',
-    currency: 'Zambian kwacha',
+    name: "Zambia",
+    capital: "Lusaka",
+    languages: [
+      "English"
+    ],
+    population: 18383956,
+    flag: "https://flagcdn.com/zm.svg",
+    currencies: [
+      {
+        code: "ZMW",
+        name: "Zambian kwacha",
+        symbol: "ZK"
+      }
+    ]
   },
   {
-    name: 'Zimbabwe',
-    capital: 'Harare',
-    languages: ['English', 'Shona', 'Northern Ndebele'],
-    population: 14240168,
-    flag: 'https://restcountries.eu/data/zwe.svg',
-    currency: 'Botswana pula',
-  },
-];
+    name: "Zimbabwe",
+    capital: "Harare",
+    languages: [
+      "English",
+      "Shona",
+      "Northern Ndebele"
+    ],
+    population: 14862927,
+    flag: "https://flagcdn.com/zw.svg",
+    currencies: [
+      {
+        code: "ZMW",
+        name: "Zambian kwacha",
+        symbol: "K"
+      }
+    ]
+  }
+]
